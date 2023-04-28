@@ -31,6 +31,29 @@
                     </li>
                 </ul>
             </li>
+            <li class="pcoded-hasmenu">
+                <a href="javascript:void(0)">
+                    <span class="pcoded-micon"><i class="fa fa-pencil-square-o"></i></span>
+                    <span class="pcoded-mtext">Relatórios</span>
+                </a>
+                <ul class="pcoded-submenu">
+                    <li class="">
+                        <a href="<?php echo BASE_URL?>cliente">
+                            <span class="pcoded-mtext">Relatório de Auditoria</span>
+                        </a>
+                    </li>
+                    <li class="">
+                        <a href="<?php echo BASE_URL?>usuario">
+                            <span class="pcoded-mtext">Relatório de Licenças</span>
+                        </a>
+                    </li>
+                    <li class="">
+                        <a href="<?php echo BASE_URL?>licenca">
+                            <span class="pcoded-mtext">Relatório de Acesso</span>
+                        </a>
+                    </li>
+                </ul>
+            </li>
         </ul>
     </div>
 </nav>

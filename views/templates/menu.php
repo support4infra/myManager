@@ -38,17 +38,17 @@
                 </a>
                 <ul class="pcoded-submenu">
                     <li class="">
-                        <a href="<?php echo BASE_URL?>cliente">
+                        <a href="<?php echo BASE_URL?>relatorioDeAuditoria">
                             <span class="pcoded-mtext">Relatório de Auditoria</span>
                         </a>
                     </li>
                     <li class="">
-                        <a href="<?php echo BASE_URL?>usuario">
+                        <a href="<?php echo BASE_URL?>relatorioDeLicencas">
                             <span class="pcoded-mtext">Relatório de Licenças</span>
                         </a>
                     </li>
                     <li class="">
-                        <a href="<?php echo BASE_URL?>licenca">
+                        <a href="<?php echo BASE_URL?>relatorioDeAcesso">
                             <span class="pcoded-mtext">Relatório de Acesso</span>
                         </a>
                     </li>

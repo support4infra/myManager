@@ -90,6 +90,69 @@
             </div>
         </div>
     </div>
+    <div class="col-xl-8 col-md-12">
+        <div class="card">
+            <div class="card-header">
+                <h5>Atividades Recentes</h5>
+            </div>
+            <div class="card-block table-border-style">
+                <div class="table-responsive">
+                    <table class="table table-hover">
+                        <thead>
+                            <tr>
+                                <th>Usuário</th>
+                                <th>Data</th>
+                                <th>Ação</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>usuario01</td>
+                                <td>28/04/2023</td>
+                                <td>Criou a empresa XXX</td>
+                            </tr>
+                            <tr>
+                                <td>usuario02</td>
+                                <td>28/04/2023</td>
+                                <td>Criou a licença YYY</td>
+                            </tr>
+                            <tr>
+                                <td>usuario03</td>
+                                <td>28/04/2023</td>
+                                <td>Excluiu a licença YYY</td>
+                            </tr>
+                            <tr>
+                                <td>usuario01</td>
+                                <td>28/04/2023</td>
+                                <td>Criou a empresa XXX</td>
+                            </tr>
+                            <tr>
+                                <td>usuario02</td>
+                                <td>28/04/2023</td>
+                                <td>Criou a licença YYY</td>
+                            </tr>
+                            <tr>
+                                <td>usuario03</td>
+                                <td>28/04/2023</td>
+                                <td>Excluiu a licença YYY</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="col-xl-4 col-md-12">
+        <div class="card">
+            <div class="card-footer">
+                <h6 class="text-muted m-b-30 m-t-15">Licenças Mais Utilizada</h6>
+            </div>
+            <div class="card-block bg-c-green">
+                <div id="proj-earning" style="height: 276px"></div>
+            </div>
+        </div>
+    </div>
+
 
                                             <div class="col-xl-8 col-md-12">
                                                 <div class="card">
@@ -109,26 +172,8 @@
                                                     </div>
                                                 </div>
                                             </div>
-                                            <div class="col-xl-4 col-md-12">
-                                                <div class="card">
-                                                    <div class="card-block bg-c-green">
-                                                        <div id="proj-earning" style="height: 230px"></div>
-                                                    </div>
-                                                    <div class="card-footer">
-                                                        <h6 class="text-muted m-b-30 m-t-15">Total completed project and earning</h6>
-                                                        <div class="row text-center">
-                                                            <div class="col-6 b-r-default">
-                                                                <h6 class="text-muted m-b-10">Completed Projects</h6>
-                                                                <h4 class="m-b-0 f-w-600 ">175</h4>
-                                                            </div>
-                                                            <div class="col-6">
-                                                                <h6 class="text-muted m-b-10">Total Earnings</h6>
-                                                                <h4 class="m-b-0 f-w-600 ">76.6M</h4>
-                                                            </div>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                            </div>
+
+
                                             <!-- visitor end -->
 
                                             <!-- sale start -->

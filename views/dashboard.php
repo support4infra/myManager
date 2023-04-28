@@ -144,11 +144,11 @@
     </div>
     <div class="col-xl-4 col-md-12">
         <div class="card">
-            <div class="card-footer">
-                <h6 class="text-muted m-b-30 m-t-15">Licenças Mais Utilizada</h6>
+            <div class="card-header">
+                <h5>Atividades Recentes</h5>
             </div>
             <div class="card-block bg-c-green">
-                <div id="proj-earning" style="height: 276px"></div>
+                <div id="proj-earning" style="height: 310px"></div>
             </div>
         </div>
     </div>

@@ -36,6 +36,7 @@
                     <span class="pcoded-micon"><i class="fa fa-pencil-square-o"></i></span>
                     <span class="pcoded-mtext">Relatórios</span>
                 </a>
+                ery
                 <ul class="pcoded-submenu">
                     <li class="">
                         <a href="<?php echo BASE_URL?>cliente">

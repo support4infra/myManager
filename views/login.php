@@ -22,14 +22,11 @@
                 <div class="row">
                     <div class="col-sm-12">
                         <form class="md-float-material form-material">
-                            <div class="text-center">
-                                <img src="..\assets\images\logo.png" alt="logo.png">
-                            </div>
                             <div class="auth-box card">
                                 <div class="card-block">
-                                    <div class="row m-b-20">
+                                    <div class="row m-b-20 text-center">
                                         <div class="col-md-12">
-                                            <h3 class="text-center txt-primary">Login</h3>
+                                            <img src="..\assets\images\logo-blue.png" alt="logo.png">
                                         </div>
                                     </div>
                                     <p class="text-muted text-center p-b-5">SGU - Sistema de Gestão Unificado</p>
@@ -43,7 +40,7 @@
                                     </div>
                                     <div class="row m-t-30">
                                         <div class="col-md-12">
-                                            <button type="button" class="btn btn-primary btn-md btn-block waves-effect text-center m-b-20">ENTRAR</button>                                            
+                                            <a href="<?php echo BASE_URL;?>"><button type="button" class="btn btn-primary btn-md btn-block waves-effect text-center m-b-20">ENTRAR</button></a>                                            
                                         </div>
                                     </div>
                                 </div>

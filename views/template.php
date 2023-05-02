@@ -15,6 +15,16 @@
         <link rel="stylesheet" type="text/css" href="..\assets\icon\font-awesome\css\font-awesome.min.css">
         <link rel="stylesheet" type="text/css" href="..\assets\css\style.css">
         <link rel="stylesheet" type="text/css" href="..\assets\css\jquery.mCustomScrollbar.css">
+        
+        <link rel="stylesheet" type="text/css" href="..\assets\icon\themify-icons\themify-icons.css">
+    <!-- ico font -->
+    <link rel="stylesheet" type="text/css" href="..\files\assets\icon\icofont\css\icofont.css">
+    <!-- feather Awesome -->
+    <link rel="stylesheet" type="text/css" href="..\files\assets\icon\feather\css\feather.css">
+    <!-- Style.css -->
+    <link rel="stylesheet" type="text/css" href="..\files\assets\css\style.css">
+
+    <link rel="stylesheet" type="text/css" href="..\files\assets\css\jquery.mCustomScrollbar.css">
     </head>
     <body>
         <div class="theme-loader">

@@ -152,4 +152,30 @@
             </div>
         </div>
     </div>
+    <div class="col-xl-4 col-md-6">
+                                                <div class="card">
+                                                    <div class="card-header">
+                                                        <h5>New Users</h5>
+                                                    </div>
+                                                    <div class="card-block"><iframe class="chartjs-hidden-iframe" tabindex="-1" style="display: block; overflow: hidden; border: 0px; margin: 0px; inset: 0px; height: 100%; width: 100%; position: absolute; pointer-events: none; z-index: -1;"></iframe>
+                                                        <canvas id="newuserchart" height="250" width="283" style="display: block; width: 283px; height: 250px;"></canvas>
+                                                    </div>
+                                                    <div class="card-footer ">
+                                                        <div class="row text-center b-t-default">
+                                                            <div class="col-4 b-r-default m-t-15">
+                                                                <h5>85%</h5>
+                                                                <p class="text-muted m-b-0">Satisfied</p>
+                                                            </div>
+                                                            <div class="col-4 b-r-default m-t-15">
+                                                                <h5>6%</h5>
+                                                                <p class="text-muted m-b-0">Unsatisfied</p>
+                                                            </div>
+                                                            <div class="col-4 m-t-15">
+                                                                <h5>9%</h5>
+                                                                <p class="text-muted m-b-0">NA</p>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
 </div>

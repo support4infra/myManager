@@ -15,16 +15,11 @@
         <link rel="stylesheet" type="text/css" href="..\assets\icon\font-awesome\css\font-awesome.min.css">
         <link rel="stylesheet" type="text/css" href="..\assets\css\style.css">
         <link rel="stylesheet" type="text/css" href="..\assets\css\jquery.mCustomScrollbar.css">
-        
         <link rel="stylesheet" type="text/css" href="..\assets\icon\themify-icons\themify-icons.css">
-    <!-- ico font -->
-    <link rel="stylesheet" type="text/css" href="..\files\assets\icon\icofont\css\icofont.css">
-    <!-- feather Awesome -->
-    <link rel="stylesheet" type="text/css" href="..\files\assets\icon\feather\css\feather.css">
-    <!-- Style.css -->
-    <link rel="stylesheet" type="text/css" href="..\files\assets\css\style.css">
-
-    <link rel="stylesheet" type="text/css" href="..\files\assets\css\jquery.mCustomScrollbar.css">
+        <link rel="stylesheet" type="text/css" href="..\assets\icon\icofont\css\icofont.css">
+        <link rel="stylesheet" type="text/css" href="..\assets\icon\feather\css\feather.css">
+        <link rel="stylesheet" type="text/css" href="..\assets\css\style.css">
+        <link rel="stylesheet" type="text/css" href="..\assets\css\jquery.mCustomScrollbar.css">
     </head>
     <body>
         <div class="theme-loader">
@@ -125,6 +120,15 @@
                 </div>
             </div>
         </div>
+        <script type="text/javascript" src="..\assets\pages\form-validation\form-validation.js"></script>
+        <script type="text/javascript" src="..\assets\bower_components\jquery-i18next\js\jquery-i18next.min.js"></script>
+        <script type="text/javascript" src="..\assets\bower_components\i18next-browser-languagedetector\js\i18nextBrowserLanguageDetector.min.js"></script>
+        <script type="text/javascript" src="..\assets\bower_components\i18next-xhr-backend\js\i18nextXHRBackend.min.js"></script>
+        <script type="text/javascript" src="..\assets\bower_components\i18next\js\i18next.min.js"></script>
+        <script type="text/javascript" src="..\assets\pages\form-validation\validate.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/underscore.js/1.8.3/underscore-min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.10.6/moment.min.js"></script>
+        <script type="text/javascript" async="" src="https://www.google-analytics.com/analytics.js"></script>
         <script type="text/javascript" src="..\assets\bower_components\jquery\js\jquery.min.js"></script>
         <script type="text/javascript" src="..\assets\bower_components\jquery-ui\js\jquery-ui.min.js"></script>
         <script type="text/javascript" src="..\assets\bower_components\popper.js\js\popper.min.js"></script>

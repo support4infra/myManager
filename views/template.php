@@ -112,8 +112,6 @@
                                         <?php $this->loadViewInTemplate($viewName, $viewDados);?>
                                     </div>
                                 </div>
-                                <div id="styleSelector">
-                                </div>
                             </div>
                         </div>
                     </div>

@@ -40,6 +40,7 @@
                                 <i class="helper"></i> <img src="../assets/images/theme2.png" alt="">
                             </label>
                         </div>
+                        </br>
                         <button type="submit" class="btn btn-primary m-b-0">salvar</button>
                     </form>
                 </div>
@@ -84,6 +85,7 @@
                                 <i class="helper"></i> <img src="../assets/images/themeTopo6.png" alt="">
                             </label>
                         </div>
+                        </br>
                         <button type="submit" class="btn btn-primary m-b-0">salvar</button>
                     </form>
                 </div>
@@ -94,10 +96,79 @@
                     <form>
                         <div class="radio radio-inline">
                             <label>
-                                <input type="radio" name="radio" value="theme1">
-                                <div class="theme-color"><a href="#" class="active-item-theme small" active-item-theme="theme1">&nbsp;</a><a href="#" class="active-item-theme small" active-item-theme="theme2">&nbsp;</a><a href="#" class="active-item-theme small" active-item-theme="theme3">&nbsp;</a><a href="#" class="active-item-theme small" active-item-theme="theme4">&nbsp;</a><a href="#" class="active-item-theme small" active-item-theme="theme5">&nbsp;</a><a href="#" class="active-item-theme small" active-item-theme="theme6">&nbsp;</a><a href="#" class="active-item-theme small" active-item-theme="theme7">&nbsp;</a><a href="#" class="active-item-theme small" active-item-theme="theme8">&nbsp;</a><a href="#" class="active-item-theme small" active-item-theme="theme9">&nbsp;</a><a href="#" class="active-item-theme small" active-item-theme="theme10">&nbsp;</a><a href="#" class="active-item-theme small" active-item-theme="theme11">&nbsp;</a><a href="#" class="active-item-theme small" active-item-theme="theme12">&nbsp;</a></div>
+                                <input type="radio" name="radio" value="themeActive1">
+                                <i class="helper"></i> <img src="../assets/images/themeActive1.png" alt="">
                             </label>
                         </div>
+                        <div class="radio radio-inline">
+                            <label>
+                                <input type="radio" name="radio" value="themeActive2">
+                                <i class="helper"></i> <img src="../assets/images/themeActive2.png" alt="">
+                            </label>
+                        </div>
+                        <div class="radio radio-inline">
+                            <label>
+                                <input type="radio" name="radio" value="themeActive3">
+                                <i class="helper"></i> <img src="../assets/images/themeActive3.png" alt="">
+                            </label>
+                        </div>
+                        <div class="radio radio-inline">
+                            <label>
+                                <input type="radio" name="radio" value="themeActive4">
+                                <i class="helper"></i> <img src="../assets/images/themeActive4.png" alt="">
+                            </label>
+                        </div>
+                        <div class="radio radio-inline">
+                            <label>
+                                <input type="radio" name="radio" value="themeActive5">
+                                <i class="helper"></i> <img src="../assets/images/themeActive5.png" alt="">
+                            </label>
+                        </div>
+                        </br>
+                        <div class="radio radio-inline">
+                            <label>
+                                <input type="radio" name="radio" value="themeActive6">
+                                <i class="helper"></i> <img src="../assets/images/themeActive6.png" alt="">
+                            </label>
+                        </div>
+                        <div class="radio radio-inline">
+                            <label>
+                                <input type="radio" name="radio" value="themeActive7">
+                                <i class="helper"></i> <img src="../assets/images/themeActive7.png" alt="">
+                            </label>
+                        </div>
+                        <div class="radio radio-inline">
+                            <label>
+                                <input type="radio" name="radio" value="themeActive8">
+                                <i class="helper"></i> <img src="../assets/images/themeActive8.png" alt="">
+                            </label>
+                        </div>
+                        <div class="radio radio-inline">
+                            <label>
+                                <input type="radio" name="radio" value="themeActive9">
+                                <i class="helper"></i> <img src="../assets/images/themeActive9.png" alt="">
+                            </label>
+                        </div>
+                        <div class="radio radio-inline">
+                            <label>
+                                <input type="radio" name="radio" value="themeActive10">
+                                <i class="helper"></i> <img src="../assets/images/themeActive10.png" alt="">
+                            </label>
+                        </div>
+                        </br>
+                        <div class="radio radio-inline">
+                            <label>
+                                <input type="radio" name="radio" value="themeActive11">
+                                <i class="helper"></i> <img src="../assets/images/themeActive11.png" alt="">
+                            </label>
+                        </div>
+                        <div class="radio radio-inline">
+                            <label>
+                                <input type="radio" name="radio" value="themeActive12">
+                                <i class="helper"></i> <img src="../assets/images/themeActive12.png" alt="">
+                            </label>
+                        </div>
+                        </br>
                         <button type="submit" class="btn btn-primary m-b-0">salvar</button>
                     </form>
                 </div>

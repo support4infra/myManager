@@ -4,7 +4,7 @@
             <div class="card-block">
                 <div class="row align-items-center">
                     <div class="col-8">
-                        <h4 class="text-c-yellow f-w-600">30.200</h4>
+                        <h4 class="text-c-yellow f-w-600"><?php echo $quantidadeLicencas;?></h4>
                         <h6 class="text-muted m-b-0">Licenças</h6>
                     </div>
                     <div class="col-4 text-right">
@@ -26,7 +26,7 @@
             <div class="card-block">
                 <div class="row align-items-center">
                     <div class="col-8">
-                        <h4 class="text-c-green f-w-600">290</h4>
+                        <h4 class="text-c-green f-w-600"><?php echo $quantidadeClientes;?></h4>
                         <h6 class="text-muted m-b-0">Clientes</h6>
                     </div>
                     <div class="col-4 text-right">
@@ -48,8 +48,8 @@
             <div class="card-block">
                 <div class="row align-items-center">
                     <div class="col-8">
-                        <h4 class="text-c-pink f-w-600">145</h4>
-                        <h6 class="text-muted m-b-0">Licenças Vencendo</h6>
+                        <h4 class="text-c-pink f-w-600"><?php echo $quantidadeLicencasVencidas;?></h4>
+                        <h6 class="text-muted m-b-0">Licenças Vencidas</h6>
                     </div>
                     <div class="col-4 text-right">
                         <i class="feather icon-calendar f-28"></i>
@@ -70,7 +70,7 @@
             <div class="card-block">
                 <div class="row align-items-center">
                     <div class="col-8">
-                        <h4 class="text-c-blue f-w-600">500</h4>
+                        <h4 class="text-c-blue f-w-600"><?php echo $quantidadeUsuarios;?></h4>
                         <h6 class="text-muted m-b-0">Usuários</h6>
                     </div>
                     <div class="col-4 text-right">

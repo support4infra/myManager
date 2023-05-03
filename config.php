@@ -14,4 +14,12 @@ if (ENVIRONMENT == 'dev') {
     $config['dbuser'] = '';
     $config['pass'] = '';
 }
+
+global $db;
+try {
+    $db = new PDO("mysql:dbname=".$config['dbname'].";host=".$config['host'], $config['dbuser'], $config['pass']);
+} catch (PDOException $e) {
+    echo "Erro: ".$e->getMessage();
+    exit;
+}
 ?>

@@ -2,7 +2,7 @@
 session_start();
 require 'config.php';
 
-define('BASE_URL', 'http://localhost/');
+define('BASE_URL', 'https://sgu.quatroinfra.com.br/');
 
 spl_autoload_register(function ($class){
     if (strpos($class, 'Controller') > -1) {

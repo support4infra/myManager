@@ -6,12 +6,12 @@ $config = array();
 if (ENVIRONMENT == 'dev') {
     $config['dbname'] = 'sgu';
     $config['host'] = 'localhost';
-    $config['dbuser'] = 'root';
-    $config['pass'] = 'root';
+    $config['dbuser'] = 'sgu';
+    $config['pass'] = '6Q7caaQi3x';
 } else {
-    $config['dbname'] = 'myManager';
+    $config['dbname'] = 'sgu';
     $config['host'] = 'localhost';
-    $config['dbuser'] = 'mymanager';
+    $config['dbuser'] = 'sgu';
     $config['pass'] = '6Q7caaQi3x';
 }
 

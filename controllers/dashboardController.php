@@ -11,9 +11,9 @@ class dashboardController extends controller{
     
     public function index(){
 
-        $Clientes = new Clientes();
-        $Usuarios = new Usuarios();
-        $Licencas = new Licencas();
+        $Clientes = new Clientes;
+        $Usuarios = new Usuarios;
+        $Licencas = new Licencas;
 
         $dados = array(
             'quantidadeClientes' => $Clientes->getQuantidade(),

@@ -27,6 +27,10 @@ class Usuarios extends model {
         }
     }
 
+    public function logout(){
+        unset($_SESSION['sessionName']);
+    }
+
     public function getQuantidade(){
         $sql = "SELECT COUNT(*) as quantidadeUsuarios FROM usuario";
         $sql = $this->db->query($sql);

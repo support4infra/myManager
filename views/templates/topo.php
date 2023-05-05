@@ -74,7 +74,7 @@
                                             </a>
                                         </li>
                                         <li>
-                                            <a href="<?php echo BASE_URL;?>login">
+                                            <a href="<?php echo BASE_URL;?>login/logout">
                                                 <i class="feather icon-log-out"></i> Sair
                                             </a>
                                         </li>

@@ -4,7 +4,7 @@ require 'environment.php';
 global $config;
 $config = array();
 if (ENVIRONMENT == 'dev') {
-    $config['dbname'] = 'mymanager';
+    $config['dbname'] = 'sgu';
     $config['host'] = 'localhost';
     $config['dbuser'] = 'root';
     $config['pass'] = 'root';

@@ -9,10 +9,10 @@ if (ENVIRONMENT == 'dev') {
     $config['dbuser'] = 'root';
     $config['pass'] = 'root';
 } else {
-    $config['dbname'] = '';
-    $config['host'] = '';
-    $config['dbuser'] = '';
-    $config['pass'] = '';
+    $config['dbname'] = 'myManager';
+    $config['host'] = 'localhost';
+    $config['dbuser'] = 'root';
+    $config['pass'] = '6Q7caaQi3x';
 }
 
 global $db;

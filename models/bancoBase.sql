@@ -188,7 +188,7 @@ CREATE TABLE `usuario` (
 
 LOCK TABLES `usuario` WRITE;
 /*!40000 ALTER TABLE `usuario` DISABLE KEYS */;
-INSERT INTO `usuario` VALUES (1,1,0,'Italo Rhan','italo.rhan@4infra.com.br','dc972ca3b9004d8e6b8e075f3bedb2d9');
+INSERT INTO `usuario` VALUES (1,1,0,'Admin','admin@4infra.com.br','21232f297a57a5a743894a0e4a801fc3');
 /*!40000 ALTER TABLE `usuario` ENABLE KEYS */;
 UNLOCK TABLES;
 /*!40103 SET TIME_ZONE=@OLD_TIME_ZONE */;
@@ -201,4 +201,4 @@ UNLOCK TABLES;
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
 /*!40111 SET SQL_NOTES=@OLD_SQL_NOTES */;
 
--- Dump completed on 2023-05-04  8:25:28
+-- Dump completed on 2023-05-05 11:31:31

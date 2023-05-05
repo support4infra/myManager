@@ -11,7 +11,7 @@ if (ENVIRONMENT == 'dev') {
 } else {
     $config['dbname'] = 'myManager';
     $config['host'] = 'localhost';
-    $config['dbuser'] = 'root';
+    $config['dbuser'] = 'mymanager';
     $config['pass'] = '6Q7caaQi3x';
 }
 

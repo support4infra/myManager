@@ -13,6 +13,8 @@ class dashboardController extends controller{
 
         $Clientes = new Clientes();
         $Usuarios = new Usuarios();
+        $Usuarios->setLoggedUsuario();
+        $Entidades = new Entidades($Usuarios->getEntidade());
         $Licencas = new Licencas();
 
         $dados = array(
@@ -20,6 +22,7 @@ class dashboardController extends controller{
             'quantidadeUsuarios' => $Usuarios->getQuantidade(),
             'quantidadeLicencas' => $Licencas->getQuantidade(),
             'quantidadeLicencasVencidas' => $Licencas->getQuantidadeLicencaVencida(),
+            'nomeEntidade' => $Entidades->getNome(),
         );
 
         $this->loadTemplate('dashboard', $dados);

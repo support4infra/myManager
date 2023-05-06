@@ -19,6 +19,7 @@
                                 <a href="#!" onclick="javascript:toggleFullScreen()">
                                     <i class="feather icon-maximize full-screen"></i>
                                 </a>
+                                <?php echo $viewDados['nomeEntidade'];?>
                             </li>
                         </ul>
                         <ul class="nav-right">

@@ -1,6 +1,8 @@
 <?php
 class Usuarios extends model {
 
+    private $userInfo;
+
     public function isLogged(){
         if(isset($_SESSION['sessionName']) && !empty($_SESSION['sessionName'])){
             return true;
@@ -24,6 +26,27 @@ class Usuarios extends model {
             return true;
         } else {
             return false;
+        }
+    }
+
+    public function setLoggedUsuario(){
+        if(isset($_SESSION['sessionName']) && !empty($_SESSION['sessionName'])){
+            $id = $_SESSION['sessionId'];
+            $sql = $this->db->prepare("SELECT * FROM usuario WHERE id = :id");
+            $sql->bindValue(':id', $id);
+            $sql->execute();
+
+            if ($sql->rowCount() > 0) {
+                $this->userInfo = $sql->fetch();
+            }
+        }
+    }
+
+    public function getEntidade() {
+        if (isset($this->userInfo['id_entidade'])) {
+            return $this->userInfo['id_entidade'];
+        } else {
+            return 0;
         }
     }
 

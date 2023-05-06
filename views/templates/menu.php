@@ -1,6 +1,6 @@
 <nav class="pcoded-navbar">
     <div class="pcoded-inner-navbar main-menu">
-        <div class="pcoded-navigatio-lavel">NOME CLIENTE</div>
+        <div class="pcoded-navigatio-lavel">BANCADA</div>
         <ul class="pcoded-item pcoded-left-item">
             <li class="">
                 <a href="<?php echo BASE_URL?>dashboard">

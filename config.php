@@ -10,7 +10,7 @@ if (ENVIRONMENT == 'dev') {
     $config['pass'] = 'root';
 } else {
     $config['dbname'] = 'sgu';
-    $config['host'] = 'teste';
+    $config['host'] = 'localhost';
     $config['dbuser'] = 'root';
     $config['pass'] = 'root';
 }

@@ -10,46 +10,18 @@
             </li>
             <li class="pcoded-hasmenu">
                 <a href="javascript:void(0)">
-                    <span class="pcoded-micon"><i class="fa fa-plus-circle"></i></span>
-                    <span class="pcoded-mtext">Cadastro</span>
+                    <span class="pcoded-micon"><i class="fa fa-street-view"></i></span>
+                    <span class="pcoded-mtext">Administração</span>
                 </a>
                 <ul class="pcoded-submenu">
                     <li class="">
                         <a href="<?php echo BASE_URL?>cliente">
-                            <span class="pcoded-mtext">Cliente</span>
+                            <span class="pcoded-mtext">Permissões</span>
                         </a>
                     </li>
                     <li class="">
                         <a href="<?php echo BASE_URL?>usuario">
-                            <span class="pcoded-mtext">Usuário</span>
-                        </a>
-                    </li>
-                    <li class="">
-                        <a href="<?php echo BASE_URL?>licenca">
-                            <span class="pcoded-mtext">Licenca</span>
-                        </a>
-                    </li>
-                </ul>
-            </li>
-            <li class="pcoded-hasmenu">
-                <a href="javascript:void(0)">
-                    <span class="pcoded-micon"><i class="fa fa-pencil-square-o"></i></span>
-                    <span class="pcoded-mtext">Relatórios</span>
-                </a>
-                <ul class="pcoded-submenu">
-                    <li class="">
-                        <a href="<?php echo BASE_URL?>relatorioDeAuditoria">
-                            <span class="pcoded-mtext">Relatório de Auditoria</span>
-                        </a>
-                    </li>
-                    <li class="">
-                        <a href="<?php echo BASE_URL?>relatorioDeLicencas">
-                            <span class="pcoded-mtext">Relatório de Licenças</span>
-                        </a>
-                    </li>
-                    <li class="">
-                        <a href="<?php echo BASE_URL?>relatorioDeAcesso">
-                            <span class="pcoded-mtext">Relatório de Acesso</span>
+                            <span class="pcoded-mtext">Grupos de Permissões</span>
                         </a>
                     </li>
                 </ul>

@@ -19,7 +19,7 @@ class perfilController extends controller{
             'nomeEntidade' => $Entidades->getNome(),
         );
 
-        if ($Usuarios->hasPermission('Super-Admin')) {
+        if ($Usuarios->hasPermission('Administração')) {
             $this->loadTemplate('perfil', $dados);
         } else {
             header("Location: ".BASE_URL);

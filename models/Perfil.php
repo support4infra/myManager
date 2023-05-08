@@ -22,7 +22,7 @@ class Perfil extends model {
 
            $parametros =  $row['parametros'];
 
-            $sql = $this->db->prepare("SELECT nome FROM grupo_permissao WHERE id IN ($parametros) AND id_entidade = :id_entidade");
+            $sql = $this->db->prepare("SELECT nome FROM permissao WHERE id IN ($parametros) AND id_entidade = :id_entidade");
             $sql->bindValue(':id_entidade', $id_entidade);
             $sql->execute();
 

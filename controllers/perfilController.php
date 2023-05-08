@@ -11,9 +11,14 @@ class perfilController extends controller{
 
     public function index(){
 
+        $Usuarios = new Usuarios();
+        $Usuarios->setLoggedUsuario();
+        $Entidades = new Entidades($Usuarios->getEntidade());
 
-
-        $dados = array();
+        $dados = array(
+            'nomeEntidade' => $Entidades->getNome(),
+        );
+        
         $this->loadTemplate('perfil', $dados);
     }
 }

@@ -1,6 +1,6 @@
 <nav class="pcoded-navbar">
     <div class="pcoded-inner-navbar main-menu">
-        <div class="pcoded-navigatio-lavel">BANCADA</div>
+        </br></br>
         <ul class="pcoded-item pcoded-left-item">
             <li class="">
                 <a href="<?php echo BASE_URL?>dashboard">
@@ -15,17 +15,13 @@
                 </a>
                 <ul class="pcoded-submenu">
                     <li class="">
-                        <a href="<?php echo BASE_URL?>cliente">
-                            <span class="pcoded-mtext">Permissões</span>
-                        </a>
-                    </li>
-                    <li class="">
-                        <a href="<?php echo BASE_URL?>usuario">
-                            <span class="pcoded-mtext">Grupos de Permissões</span>
+                        <a href="<?php echo BASE_URL?>perfil">
+                            <span class="pcoded-mtext">Perfil</span>
                         </a>
                     </li>
                 </ul>
             </li>
+            <div class="pcoded-navigatio-lavel">BANCADA</div>
         </ul>
     </div>
 </nav>

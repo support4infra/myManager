@@ -1,5 +1,13 @@
 <?php
 class loginController extends controller{
+
+    public function __construct()
+    {
+        $Usuarios = new Usuarios();
+        if ($Usuarios->isLogged() == true) {
+            header("Location: ".BASE_URL);
+        }
+    }
     
     public function index(){
 
@@ -25,8 +33,8 @@ class loginController extends controller{
     public function logout(){
 
         $Usuarios = new Usuarios();
+        $Usuarios->setLoggedUsuario();
         $Usuarios->logout();
         header("Location: ".BASE_URL);
-
     }
 }

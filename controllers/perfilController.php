@@ -18,7 +18,11 @@ class perfilController extends controller{
         $dados = array(
             'nomeEntidade' => $Entidades->getNome(),
         );
-        
-        $this->loadTemplate('perfil', $dados);
+
+        if ($Usuarios->hasPermission('Super-Admin')) {
+            $this->loadTemplate('perfil', $dados);
+        } else {
+            header("Location: ".BASE_URL);
+        }
     }
 }

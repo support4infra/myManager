@@ -2,6 +2,7 @@
 class Usuarios extends model {
 
     private $userInfo;
+    private $perfil;
 
     public function isLogged(){
         if(isset($_SESSION['sessionName']) && !empty($_SESSION['sessionName'])){
@@ -38,6 +39,8 @@ class Usuarios extends model {
 
             if ($sql->rowCount() > 0) {
                 $this->userInfo = $sql->fetch();
+                $this->perfil = new Perfil();
+                $this->perfil->setGrupo($this->userInfo['grupo'], $this->userInfo['id_entidade']);
             }
         }
     }
@@ -52,6 +55,10 @@ class Usuarios extends model {
 
     public function logout(){
         unset($_SESSION['sessionName']);
+    }
+
+    public function hasPermission($name){
+        return $this->perfil->hasPermission($name);
     }
 
     public function getQuantidade(){

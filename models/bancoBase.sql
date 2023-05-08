@@ -1,6 +1,6 @@
 -- MySQL dump 10.13  Distrib 8.0.33, for Win64 (x86_64)
 --
--- Host: 127.0.0.1    Database: mymanager
+-- Host: 127.0.0.1    Database: sgu
 -- ------------------------------------------------------
 -- Server version	5.7.24
 
@@ -28,7 +28,7 @@ CREATE TABLE `cliente` (
   `nome` varchar(50) COLLATE utf8_unicode_ci NOT NULL,
   `email` varchar(50) COLLATE utf8_unicode_ci DEFAULT NULL,
   PRIMARY KEY (`id`)
-) ENGINE=InnoDB AUTO_INCREMENT=5 DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
+) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -51,7 +51,7 @@ CREATE TABLE `entidade` (
   `id` int(11) NOT NULL AUTO_INCREMENT,
   `nome` varchar(50) COLLATE utf8_unicode_ci NOT NULL,
   PRIMARY KEY (`id`)
-) ENGINE=InnoDB AUTO_INCREMENT=3 DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
+) ENGINE=InnoDB AUTO_INCREMENT=2 DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -75,8 +75,9 @@ CREATE TABLE `grupo_permissao` (
   `id` int(11) NOT NULL AUTO_INCREMENT,
   `nome` varchar(50) COLLATE utf8_unicode_ci NOT NULL,
   `parametros` varchar(200) COLLATE utf8_unicode_ci NOT NULL,
+  `id_entidade` varchar(45) COLLATE utf8_unicode_ci NOT NULL,
   PRIMARY KEY (`id`)
-) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
+) ENGINE=InnoDB AUTO_INCREMENT=6 DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -85,6 +86,7 @@ CREATE TABLE `grupo_permissao` (
 
 LOCK TABLES `grupo_permissao` WRITE;
 /*!40000 ALTER TABLE `grupo_permissao` DISABLE KEYS */;
+INSERT INTO `grupo_permissao` VALUES (1,'Super-Admin','1','1');
 /*!40000 ALTER TABLE `grupo_permissao` ENABLE KEYS */;
 UNLOCK TABLES;
 
@@ -105,7 +107,7 @@ CREATE TABLE `licenca` (
   `total` int(11) NOT NULL,
   `total_utilizada` int(11) NOT NULL,
   PRIMARY KEY (`id`)
-) ENGINE=InnoDB AUTO_INCREMENT=3 DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
+) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -151,8 +153,9 @@ DROP TABLE IF EXISTS `permissao`;
 CREATE TABLE `permissao` (
   `id` int(11) NOT NULL AUTO_INCREMENT,
   `nome` varchar(50) COLLATE utf8_unicode_ci NOT NULL,
+  `id_entidade` varchar(45) COLLATE utf8_unicode_ci NOT NULL,
   PRIMARY KEY (`id`)
-) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
+) ENGINE=InnoDB AUTO_INCREMENT=4 DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -161,6 +164,7 @@ CREATE TABLE `permissao` (
 
 LOCK TABLES `permissao` WRITE;
 /*!40000 ALTER TABLE `permissao` DISABLE KEYS */;
+INSERT INTO `permissao` VALUES (1,'Administração','1'),(2,'Bancada','1');
 /*!40000 ALTER TABLE `permissao` ENABLE KEYS */;
 UNLOCK TABLES;
 
@@ -174,12 +178,12 @@ DROP TABLE IF EXISTS `usuario`;
 CREATE TABLE `usuario` (
   `id` int(11) NOT NULL AUTO_INCREMENT,
   `id_entidade` int(11) NOT NULL,
-  `grupo` int(11) NOT NULL,
+  `grupo` int(11) DEFAULT NULL,
   `nome` varchar(50) COLLATE utf8_unicode_ci NOT NULL,
   `email` varchar(50) COLLATE utf8_unicode_ci DEFAULT NULL,
   `password` varchar(50) COLLATE utf8_unicode_ci NOT NULL,
   PRIMARY KEY (`id`)
-) ENGINE=InnoDB AUTO_INCREMENT=4 DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
+) ENGINE=InnoDB AUTO_INCREMENT=3 DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -188,7 +192,7 @@ CREATE TABLE `usuario` (
 
 LOCK TABLES `usuario` WRITE;
 /*!40000 ALTER TABLE `usuario` DISABLE KEYS */;
-INSERT INTO `usuario` VALUES (1,1,0,'Admin','admin@4infra.com.br','21232f297a57a5a743894a0e4a801fc3');
+INSERT INTO `usuario` VALUES (1,1,1,'Admin','admin@4infra.com.br','21232f297a57a5a743894a0e4a801fc3'),(2,1,2,'Italo Rhan','italo.rhan@4infra.com.br','21232f297a57a5a743894a0e4a801fc3');
 /*!40000 ALTER TABLE `usuario` ENABLE KEYS */;
 UNLOCK TABLES;
 /*!40103 SET TIME_ZONE=@OLD_TIME_ZONE */;
@@ -201,4 +205,4 @@ UNLOCK TABLES;
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
 /*!40111 SET SQL_NOTES=@OLD_SQL_NOTES */;
 
--- Dump completed on 2023-05-05 11:31:31
+-- Dump completed on 2023-05-08 17:34:26

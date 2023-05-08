@@ -26,92 +26,101 @@
                                         </div>
                                     </div>
                                 </div>
-<div class="card">
-                                                    <div class="card-header table-card-header">
-                                                        <h5>HTML5 Export Buttons</h5>
-                                                    </div>
-                                                    <div class="card-block">
-                                                        <div class="dt-responsive table-responsive">
-                                                            <div id="basic-btn_wrapper" class="dataTables_wrapper dt-bootstrap4"><div class="dt-buttons"><a class="dt-button buttons-copy buttons-html5" tabindex="0" aria-controls="basic-btn" href="#"><span>Copy</span></a><a class="dt-button buttons-csv buttons-html5" tabindex="0" aria-controls="basic-btn" href="#"><span>CSV</span></a><a class="dt-button buttons-excel buttons-html5" tabindex="0" aria-controls="basic-btn" href="#"><span>Excel</span></a><a class="dt-button buttons-pdf buttons-html5" tabindex="0" aria-controls="basic-btn" href="#"><span>PDF</span></a><a class="dt-button buttons-print" tabindex="0" aria-controls="basic-btn" href="#"><span>Print</span></a></div><div id="basic-btn_filter" class="dataTables_filter"><label>Search:<input type="search" class="form-control input-sm" placeholder="" aria-controls="basic-btn"></label></div><table id="basic-btn" class="table table-striped table-bordered nowrap dataTable" role="grid" aria-describedby="basic-btn_info">
-                                                                <thead>
-                                                                    <tr role="row"><th class="sorting_asc" tabindex="0" aria-controls="basic-btn" rowspan="1" colspan="1" aria-sort="ascending" aria-label="Name: activate to sort column descending" style="width: 265.438px;">Name</th><th class="sorting" tabindex="0" aria-controls="basic-btn" rowspan="1" colspan="1" aria-label="Position: activate to sort column ascending" style="width: 388.531px;">Position</th><th class="sorting" tabindex="0" aria-controls="basic-btn" rowspan="1" colspan="1" aria-label="Office: activate to sort column ascending" style="width: 195.844px;">Office</th><th class="sorting" tabindex="0" aria-controls="basic-btn" rowspan="1" colspan="1" aria-label="Age: activate to sort column ascending" style="width: 104.281px;">Age</th><th class="sorting" tabindex="0" aria-controls="basic-btn" rowspan="1" colspan="1" aria-label="Start date: activate to sort column ascending" style="width: 199.391px;">Start date</th><th class="sorting" tabindex="0" aria-controls="basic-btn" rowspan="1" colspan="1" aria-label="Salary: activate to sort column ascending" style="width: 141.719px;">Salary</th></tr>
-                                                                </thead>
-                                                                <tbody>
-                                                        <tr role="row" class="odd">
-                                                                <td class="sorting_1">Airi Satou</td>
-                                                                <td>Accountant</td>
-                                                                <td>Tokyo</td>
-                                                                <td>33</td>
-                                                                <td>2008/11/28</td>
-                                                                <td>$162,700</td>
-                                                            </tr><tr role="row" class="even">
-                                                                <td class="sorting_1">Ashton Cox</td>
-                                                                <td>Junior Technical Author</td>
-                                                                <td>San Francisco</td>
-                                                                <td>66</td>
-                                                                <td>2009/01/12</td>
-                                                                <td>$86,000</td>
-                                                            </tr><tr role="row" class="odd">
-                                                                <td class="sorting_1">Bradley Greer</td>
-                                                                <td>Software Engineer</td>
-                                                                <td>London</td>
-                                                                <td>41</td>
-                                                                <td>2012/10/13</td>
-                                                                <td>$132,000</td>
-                                                            </tr><tr role="row" class="even">
-                                                                <td class="sorting_1">Brielle Williamson</td>
-                                                                <td>Integration Specialist</td>
-                                                                <td>New York</td>
-                                                                <td>61</td>
-                                                                <td>2012/12/02</td>
-                                                                <td>$372,000</td>
-                                                            </tr><tr role="row" class="odd">
-                                                                <td class="sorting_1">Cedric Kelly</td>
-                                                                <td>Senior Javascript Developer</td>
-                                                                <td>Edinburgh</td>
-                                                                <td>22</td>
-                                                                <td>2012/03/29</td>
-                                                                <td>$433,060</td>
-                                                            </tr><tr role="row" class="even">
-                                                                <td class="sorting_1">Charde Marshall</td>
-                                                                <td>Regional Director</td>
-                                                                <td>San Francisco</td>
-                                                                <td>36</td>
-                                                                <td>2008/10/16</td>
-                                                                <td>$470,600</td>
-                                                            </tr><tr role="row" class="odd">
-                                                                <td class="sorting_1">Colleen Hurst</td>
-                                                                <td>Javascript Developer</td>
-                                                                <td>San Francisco</td>
-                                                                <td>39</td>
-                                                                <td>2009/09/15</td>
-                                                                <td>$205,500</td>
-                                                            </tr><tr role="row" class="even">
-                                                                <td class="sorting_1">Dai Rios</td>
-                                                                <td>Personnel Lead</td>
-                                                                <td>Edinburgh</td>
-                                                                <td>35</td>
-                                                                <td>2012/09/26</td>
-                                                                <td>$217,500</td>
-                                                            </tr><tr role="row" class="odd">
-                                                                <td class="sorting_1">Garrett Winters</td>
-                                                                <td>Accountant</td>
-                                                                <td>Tokyo</td>
-                                                                <td>63</td>
-                                                                <td>2011/07/25</td>
-                                                                <td>$170,750</td>
-                                                            </tr><tr role="row" class="even">
-                                                                <td class="sorting_1">Gloria Little</td>
-                                                                <td>Systems Administrator</td>
-                                                                <td>New York</td>
-                                                                <td>59</td>
-                                                                <td>2009/04/10</td>
-                                                                <td>$237,500</td>
-                                                            </tr></tbody>
-                                                                <tfoot>
-                                                                    <tr><th rowspan="1" colspan="1">Name</th><th rowspan="1" colspan="1">Position</th><th rowspan="1" colspan="1">Office</th><th rowspan="1" colspan="1">Age</th><th rowspan="1" colspan="1">Start date</th><th rowspan="1" colspan="1">Salary</th></tr>
-                                                                </tfoot>
-                                                            </table><div class="dataTables_info" id="basic-btn_info" role="status" aria-live="polite">Showing 1 to 10 of 20 entries</div><div class="dataTables_paginate paging_simple_numbers" id="basic-btn_paginate"><ul class="pagination"><li class="paginate_button page-item previous disabled" id="basic-btn_previous"><a href="#" aria-controls="basic-btn" data-dt-idx="0" tabindex="0" class="page-link">Previous</a></li><li class="paginate_button page-item active"><a href="#" aria-controls="basic-btn" data-dt-idx="1" tabindex="0" class="page-link">1</a></li><li class="paginate_button page-item "><a href="#" aria-controls="basic-btn" data-dt-idx="2" tabindex="0" class="page-link">2</a></li><li class="paginate_button page-item next" id="basic-btn_next"><a href="#" aria-controls="basic-btn" data-dt-idx="3" tabindex="0" class="page-link">Next</a></li></ul></div></div>
-                                                        </div>
-                                                    </div>
+                                <div class="card">
+                                            <div class="card-header">
+                                                <h5>Edit With Button</h5>
+                                                <span>Click on buttons to perform actions</span>
+
+                                            </div>
+                                            <div class="card-block">
+                                                <div class="table-responsive">
+                                                    <table class="table table-striped table-bordered" id="example-2">
+                                                        <thead>
+                                                            <tr>
+                                                                <th>#</th>
+                                                                <th>First</th>
+                                                                <th>Last</th>
+                                                                <th>Nickname</th>
+                                                            <th class="tabledit-toolbar-column"></th></tr>
+                                                        </thead>
+                                                        <tbody>
+                                                            <tr>
+                                                                <th scope="row">1</th>
+                                                                <td class="tabledit-view-mode"><span class="tabledit-span">Mark
+                                                                    
+                                                                </span><input class="tabledit-input form-control input-sm" type="text" name="First Name" value="Mark
+                                                                    
+                                                                " style="display: none;" disabled=""></td>
+                                                                <td class="tabledit-view-mode"><span class="tabledit-span">Otto
+                                                                    
+                                                                </span><input class="tabledit-input form-control input-sm" type="text" name="Last Name" value="Otto
+                                                                    
+                                                                " style="display: none;" disabled=""></td>
+                                                                <td class="tabledit-view-mode"><span class="tabledit-span">@mdo</span>
+                                                                    <select class="tabledit-input form-control input-sm" name="Nickname" disabled="" style="display:none;">
+                                                <option value="1">@mdo</option>
+                                                <option value="2">@fat</option>
+                                                <option value="3">@twitter</option>
+                                            </select>
+                                                                </td>
+                                                            <td style="white-space: nowrap; width: 1%;"><div class="tabledit-toolbar btn-toolbar" style="text-align: left;">
+                                           <div class="btn-group btn-group-sm" style="float: none;"><button type="button" class="tabledit-edit-button btn btn-primary waves-effect waves-light" style="float: none;margin: 5px;"><span class="icofont icofont-ui-edit"></span></button><button type="button" class="tabledit-delete-button btn btn-danger waves-effect waves-light" style="float: none;margin: 5px;"><span class="icofont icofont-ui-delete"></span></button></div>
+                                           <button type="button" class="tabledit-save-button btn btn-sm btn-success" style="display: none; float: none;">Save</button>
+                                           <button type="button" class="tabledit-confirm-button btn btn-sm btn-danger" style="display: none; float: none;">Confirm</button>
+                                           <button type="button" class="tabledit-restore-button btn btn-sm btn-warning" style="display: none; float: none;">Restore</button>
+                                       </div></td></tr>
+                                                            <tr>
+                                                                <th scope="row">2</th>
+                                                                <td class="tabledit-view-mode"><span class="tabledit-span">Jacob
+                                                                    
+                                                                </span><input class="tabledit-input form-control input-sm" type="text" name="First Name" value="Jacob
+                                                                    
+                                                                " style="display: none;" disabled=""></td>
+                                                                <td class="tabledit-view-mode"><span class="tabledit-span">Thorntonkk
+                                                                    
+                                                                </span><input class="tabledit-input form-control input-sm" type="text" name="Last Name" value="Thorntonkk
+                                                                    
+                                                                " style="display: none;" disabled=""></td>
+                                                                <td class="tabledit-view-mode"><span class="tabledit-span">@mdo</span>
+                                                                    <select class="tabledit-input form-control input-sm" name="Nickname" disabled="" style="display:none;">
+                                                <option value="1">@mdo</option>
+                                                <option value="2">@fat</option>
+                                                <option value="3">@twitter</option>
+                                            </select>
+                                                                </td>
+                                                            <td style="white-space: nowrap; width: 1%;"><div class="tabledit-toolbar btn-toolbar" style="text-align: left;">
+                                           <div class="btn-group btn-group-sm" style="float: none;"><button type="button" class="tabledit-edit-button btn btn-primary waves-effect waves-light" style="float: none;margin: 5px;"><span class="icofont icofont-ui-edit"></span></button><button type="button" class="tabledit-delete-button btn btn-danger waves-effect waves-light" style="float: none;margin: 5px;"><span class="icofont icofont-ui-delete"></span></button></div>
+                                           <button type="button" class="tabledit-save-button btn btn-sm btn-success" style="display: none; float: none;">Save</button>
+                                           <button type="button" class="tabledit-confirm-button btn btn-sm btn-danger" style="display: none; float: none;">Confirm</button>
+                                           <button type="button" class="tabledit-restore-button btn btn-sm btn-warning" style="display: none; float: none;">Restore</button>
+                                       </div></td></tr>
+                                                            <tr>
+                                                                <th scope="row">3</th>
+                                                                <td class="tabledit-view-mode"><span class="tabledit-span">Larry
+                                                                    
+                                                                </span><input class="tabledit-input form-control input-sm" type="text" name="First Name" value="Larry
+                                                                    
+                                                                " style="display: none;" disabled=""></td>
+                                                                <td class="tabledit-view-mode"><span class="tabledit-span">the Bird
+                                                                    
+                                                                </span><input class="tabledit-input form-control input-sm" type="text" name="Last Name" value="the Bird
+                                                                    
+                                                                " style="display: none;" disabled=""></td>
+                                                                <td class="tabledit-view-mode"><span class="tabledit-span">@mdo</span>
+                                                                    <select class="tabledit-input form-control input-sm" name="Nickname" disabled="" style="display:none;">
+                                                <option value="1">@mdo</option>
+                                                <option value="2">@fat</option>
+                                                <option value="3">@twitter</option>
+                                            </select>
+                                                                </td>
+                                                            <td style="white-space: nowrap; width: 1%;"><div class="tabledit-toolbar btn-toolbar" style="text-align: left;">
+                                           <div class="btn-group btn-group-sm" style="float: none;"><button type="button" class="tabledit-edit-button btn btn-primary waves-effect waves-light" style="float: none;margin: 5px;"><span class="icofont icofont-ui-edit"></span></button><button type="button" class="tabledit-delete-button btn btn-danger waves-effect waves-light" style="float: none;margin: 5px;"><span class="icofont icofont-ui-delete"></span></button></div>
+                                           <button type="button" class="tabledit-save-button btn btn-sm btn-success" style="display: none; float: none;">Save</button>
+                                           <button type="button" class="tabledit-confirm-button btn btn-sm btn-danger" style="display: none; float: none;">Confirm</button>
+                                           <button type="button" class="tabledit-restore-button btn btn-sm btn-warning" style="display: none; float: none;">Restore</button>
+                                       </div></td></tr>
+                                                        </tbody>
+                                                    </table>
                                                 </div>
+                                            </div>
+                                        </div>

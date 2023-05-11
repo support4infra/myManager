@@ -27,8 +27,9 @@ class Perfil extends model {
             $sql->execute();
 
             if ($sql->rowCount() > 0) {
-                foreach($sql->fetchAll() as $item);
+                foreach($sql->fetchAll() as $item) {
                     $this->permissao[] = $item['nome'];
+                }
             }
         }
     }

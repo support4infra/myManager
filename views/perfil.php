@@ -71,61 +71,47 @@
             <div class="modal-body">
                 <div class="card-block">
                     <form method="POST">
+                        <div class="col-sm-12">
+                            <div class="alert alert-warning">
+                                Para selecionar mais que uma persmissão ao Perfil, pressione <strong>"SHIFT"</strong>
+                            </div>
+                        </div>
                         <div class="form-group row">
-                            <label class="col-sm-2">Radio Buttons</label>
-                                                                <div class="col-sm-10">
-                                                                    <div class="form-radio">
-                                                                        <div class="radio radiofill radio-primary radio-inline">
-                                                                            <label>
-                                                        <input type="radio" name="member" value="free" data-bv-field="member">
-                                                        <i class="helper"></i>Select here
-                                                    </label>
-                                                                        </div>
-                                                                        <div class="radio radiofill radio-primary radio-inline">
-                                                                            <label>
-                                                        <input type="radio" name="member" value="personal" data-bv-field="member">
-                                                        <i class="helper"></i>Another select
-                                                    </label>
-                                                                        </div>
-                                                                    </div>
-                                                                    <span class="messages"></span>
-                                                                </div>
-                                                            </div>
-                                                            <div class="form-group row">
-                                                                <label class="col-sm-2">Select Checkbox</label>
-                                                                <div class="col-sm-10">
-                                                                    <div class="checkbox-fade fade-in-primary">
-                                                                        <label>
-                                                    <input type="checkbox" id="checkbox" name="Language" value="HTML">
-                                                    <span class="cr">
-                                             <i class="cr-icon icofont icofont-ui-check txt-primary"></i>
-                                                </span>
-                                                    <span>HTML</span>
-                                                </label>
-                                                                    </div>
-                                                                    <div class="checkbox-fade fade-in-primary">
-                                                                        <label>
-                                                    <input type="checkbox" id="checkbox2" name="Language" value="CSS">
-                                                    <span class="cr">
-                                                <i class="cr-icon icofont icofont-ui-check txt-primary"></i>
-                                                </span>
-                                                    <span>CSS</span>
-                                                </label>
-                                                                    </div>
-                                                                    <span class="messages"></span>
-                                                                </div>
-                                                            </div>
-                                                            <div class="row">
-                                                                <label class="col-sm-2"></label>
-                                                                <div class="col-sm-10">
-                                                                <button type="button" class="btn btn-secondary mobtn" data-dismiss="modal">Cancelar</button>
-                    <a href="<?php echo BASE_URL ;?>perfil/add" class="btn btn-primary">Salvar</a>
-                                                                </div>
-                                                            </div>
-                                                        </form>
-                                                    </div>            
+                            <div class="col-sm-12">
+                                <div class="col-sm-12">
+                                    <input type="text" class="form-control" placeholder="Nome do Perfil" require="required">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="form-group row">
+                            <div class="col-sm-12">
+                                <div class="col-sm-12">
+                                    <select name="perfil" class="form-control" multiple>
+                                        <option disabled selected>Selecione as Permissões</option>
+                                        <option value="Super-Admin">Super-Admin</option>
+                                        <option value="Super-Admin">Analista-Bancada</option>
+                                    </select>
+                                </div>
+                            </div>
+                        </div>        
+                        <div class="form-group row">
+                            <div class="col-sm-12">
+                                <div class="col-sm-4">
+                                    <button type="button" class="btn btn-secondary mobtn" data-dismiss="modal">Cancelar</button>
+                                    <a href="<?php echo BASE_URL ;?>perfil/add" class="btn btn-primary">Salvar</a>
+                                </div>
+                            </div>
+                        </div>
+                    </form>
+                </div>            
+            </div>
         </div>
-      </div>
     </div>
-  </div>
 </div>
+
+
+
+
+
+
+

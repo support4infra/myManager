@@ -17,9 +17,8 @@
         <link rel="stylesheet" type="text/css" href="..\assets\css\jquery.mCustomScrollbar.css">
         <link rel="stylesheet" type="text/css" href="..\assets\icon\themify-icons\themify-icons.css">
         <link rel="stylesheet" type="text/css" href="..\assets\icon\icofont\css\icofont.css">
-        <link rel="stylesheet" type="text/css" href="..\assets\icon\feather\css\feather.css">
-        <link rel="stylesheet" type="text/css" href="..\assets\css\style.css">
-        <link rel="stylesheet" type="text/css" href="..\assets\css\jquery.mCustomScrollbar.css">
+        <link rel="stylesheet" type="text/css" href="..\assets\bower_components\bootstrap-tagsinput\css\bootstrap-tagsinput.css">
+        <link rel="stylesheet" type="text/css" href="..\assets\bower_components\switchery\css\switchery.min.css">
     </head>
     <body>
         <div class="theme-loader">
@@ -145,6 +144,9 @@
         <script type="text/javascript" src="..\assets\pages\dashboard\analytic-dashboard.min.js"></script>
         <script type="text/javascript" src="..\assets\js\script.js"></script>
         <script async="" src="https://www.googletagmanager.com/gtag/js?id=UA-23581568-13"></script>
+        <script type="text/javascript" src="..\assets\bower_components\bootstrap-multiselect\js\bootstrap-multiselect.js"></script>
+        <script type="text/javascript" src="..\assets\pages\advance-elements\select2-custom.js"></script>
+        <script type="text/javascript" src="..\assets\pages\advance-elements\swithces.js"></script>
         <script>
             window.dataLayer = window.dataLayer || [];
             function gtag(){dataLayer.push(arguments);}

@@ -16,11 +16,11 @@ class Perfil extends model {
         if ($sql->rowCount() > 0) {
             $row = $sql->fetch();
 
-            if(empty($row['parametros'])){
+            if (empty($row['parametros'])) {
                 $row['parametros'] = '0';
             }
 
-           $parametros =  $row['parametros'];
+            $parametros = $row['parametros'];
 
             $sql = $this->db->prepare("SELECT nome FROM permissao WHERE id IN ($parametros) AND id_entidade = :id_entidade");
             $sql->bindValue(':id_entidade', $id_entidade);
@@ -34,8 +34,8 @@ class Perfil extends model {
         }
     }
 
-    public function hasPermission($name) {
-        if (in_array($name, $this->permissao)) {
+    public function hasPermission($nome) {
+        if (in_array($nome, $this->permissao)) {
             return true;
         } else {
             return false;

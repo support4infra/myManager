@@ -33,7 +33,6 @@ class loginController extends controller{
     public function logout(){
 
         $Usuarios = new Usuarios();
-        $Usuarios->setLoggedUsuario();
         $Usuarios->logout();
         header("Location: ".BASE_URL);
     }

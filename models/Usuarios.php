@@ -57,8 +57,8 @@ class Usuarios extends model {
         unset($_SESSION['sessionName']);
     }
 
-    public function hasPermission($name){
-        return $this->perfil->hasPermission($name);
+    public function hasPermission($nome){
+        return $this->perfil->hasPermission($nome);
     }
 
     public function getQuantidade(){

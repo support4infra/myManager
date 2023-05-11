@@ -24,7 +24,7 @@
 </div>
 <div class="card">
     <div class="card-block">
-        <button type="button" class="btn btn-primary waves-effect waves-light add" onclick="add_row();">Add Perfil</button>
+        <button type="button" class="btn btn-primary sweet-1 m-b-10" data-toggle="modal" data-target="#myModal">Adicionar Perfil</button>
         </br></br>
         <div class="table-responsive">
             <table class="table table-striped table-bordered" id="example-2">
@@ -60,4 +60,72 @@
             </table>
         </div>
     </div>
+</div>
+
+<div class="modal fade" id="myModal" role="dialog">
+    <div class="modal-dialog modal-lg">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h4 class="modal-title">Criar Novo Perfil</h4>
+            </div>
+            <div class="modal-body">
+                <div class="card-block">
+                    <form method="POST">
+                        <div class="form-group row">
+                            <label class="col-sm-2">Radio Buttons</label>
+                                                                <div class="col-sm-10">
+                                                                    <div class="form-radio">
+                                                                        <div class="radio radiofill radio-primary radio-inline">
+                                                                            <label>
+                                                        <input type="radio" name="member" value="free" data-bv-field="member">
+                                                        <i class="helper"></i>Select here
+                                                    </label>
+                                                                        </div>
+                                                                        <div class="radio radiofill radio-primary radio-inline">
+                                                                            <label>
+                                                        <input type="radio" name="member" value="personal" data-bv-field="member">
+                                                        <i class="helper"></i>Another select
+                                                    </label>
+                                                                        </div>
+                                                                    </div>
+                                                                    <span class="messages"></span>
+                                                                </div>
+                                                            </div>
+                                                            <div class="form-group row">
+                                                                <label class="col-sm-2">Select Checkbox</label>
+                                                                <div class="col-sm-10">
+                                                                    <div class="checkbox-fade fade-in-primary">
+                                                                        <label>
+                                                    <input type="checkbox" id="checkbox" name="Language" value="HTML">
+                                                    <span class="cr">
+                                             <i class="cr-icon icofont icofont-ui-check txt-primary"></i>
+                                                </span>
+                                                    <span>HTML</span>
+                                                </label>
+                                                                    </div>
+                                                                    <div class="checkbox-fade fade-in-primary">
+                                                                        <label>
+                                                    <input type="checkbox" id="checkbox2" name="Language" value="CSS">
+                                                    <span class="cr">
+                                                <i class="cr-icon icofont icofont-ui-check txt-primary"></i>
+                                                </span>
+                                                    <span>CSS</span>
+                                                </label>
+                                                                    </div>
+                                                                    <span class="messages"></span>
+                                                                </div>
+                                                            </div>
+                                                            <div class="row">
+                                                                <label class="col-sm-2"></label>
+                                                                <div class="col-sm-10">
+                                                                <button type="button" class="btn btn-secondary mobtn" data-dismiss="modal">Cancelar</button>
+                    <a href="<?php echo BASE_URL ;?>perfil/add" class="btn btn-primary">Salvar</a>
+                                                                </div>
+                                                            </div>
+                                                        </form>
+                                                    </div>            
+        </div>
+      </div>
+    </div>
+  </div>
 </div>

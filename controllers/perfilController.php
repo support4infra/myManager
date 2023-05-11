@@ -14,15 +14,17 @@ class perfilController extends controller{
         $Usuarios = new Usuarios();
         $Usuarios->setLoggedUsuario();
         $Entidades = new Entidades($Usuarios->getEntidade());
+        $Perfil = new Perfil();
 
-        $dados = array(
-            'nomeEntidade' => $Entidades->getNome(),
-        );
-
-        if ($Usuarios->hasPermission('Administração')) {
+        if ($Usuarios->hasPermission('Administração')) { 
+            $dados= array(
+                'nomeEntidade' => $Entidades->getNome(),
+                'getListPerfil' => $Perfil->getListPerfil($Usuarios->getEntidade()),
+            );       
             $this->loadTemplate('perfil', $dados);
         } else {
             header("Location: ".BASE_URL);
         }
+        
     }
 }

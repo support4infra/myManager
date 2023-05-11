@@ -24,6 +24,8 @@
 </div>
 <div class="card">
     <div class="card-block">
+        <button type="button" class="btn btn-primary waves-effect waves-light add" onclick="add_row();">Add Perfil</button>
+        </br></br>
         <div class="table-responsive">
             <table class="table table-striped table-bordered" id="example-2">
                 <thead>
@@ -34,24 +36,26 @@
                     </tr>
                 </thead>
                 <tbody>
+                    <?php foreach($getListPerfil as $perfil):?>
                     <tr>
-                        <th scope="row">1</th>
+                        <th scope="row"><?php echo $perfil['id'];?></th>                      
                         <td class="tabledit-view-mode">
-                            <span class="tabledit-span">Super-Admin</span>
+                            <span class="tabledit-span"><?php echo $perfil['nome'];?></span>
                         </td>
                         <td style="white-space: nowrap; width: 1%;">
                             <div class="tabledit-toolbar btn-toolbar" style="text-align: left;">
                                 <div class="btn-group btn-group-sm" style="float: none;">
-                                    <button type="button" class="tabledit-edit-button btn btn-primary waves-effect waves-light" style="float: none;margin: 5px;">
+                                    <a href="<?php echo BASE_URL ;?>perfil/edit/<?php echo $perfil['id'];?>" class="tabledit-edit-button btn btn-primary waves-effect waves-light" style="float: none;margin: 5px;">                  
                                         <span class="icofont icofont-ui-edit"></span>
-                                    </button>
-                                    <button type="button" class="tabledit-delete-button btn btn-danger waves-effect waves-light" style="float: none;margin: 5px;">
+                                    </a>
+                                    <a href="<?php echo BASE_URL ;?>perfil/delet/<?php echo $perfil['id'];?>" class="tabledit-delete-button btn btn-danger waves-effect waves-light" style="float: none;margin: 5px;">
                                         <span class="icofont icofont-ui-delete"></span>
-                                    </button>
+                                    </a>
                                 </div>    
                             </div>
                         </td>
                     </tr>
+                    <?php endforeach;?>
                 </tbody>
             </table>
         </div>

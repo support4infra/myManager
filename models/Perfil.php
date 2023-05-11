@@ -34,6 +34,20 @@ class Perfil extends model {
         }
     }
 
+    public function getListPerfil($id_entidade){
+        $array = array();
+
+        $sql = $this->db->prepare("SELECT * FROM grupo_permissao WHERE id_entidade = :id_entidade");
+        $sql->bindValue(':id_entidade', $id_entidade);
+        $sql->execute();
+
+        if ($sql->rowCount() > 0) {
+            $array = $sql->fetchAll();
+        }
+
+        return $array;
+    }
+
     public function hasPermission($nome) {
         if (in_array($nome, $this->permissao)) {
             return true;

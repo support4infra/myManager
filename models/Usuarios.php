@@ -86,4 +86,16 @@ class Usuarios extends model {
             return 0;
         }
     }
+
+    public function pesquisaUsuariosNoGrupo($id){
+        $sql = $this->db->prepare("SELECT COUNT(*) as c FROM usuario WHERE grupo = :grupo");
+        $sql->bindValue(':grupo', $id);
+        $sql->execute();
+        $row = $sql->fetch();
+        if ($row['c'] == '0') {
+            return false;
+        } else {
+            return true;
+        }
+    }
 }

@@ -72,9 +72,12 @@ class Perfil extends model {
     }
 
     public function deletPerfil($id){
-        $sql = $this->db->prepare("DELETE FROM grupo_permissao WHERE id = :id");
-        $sql->bindValue(":id", $id);
-        $sql->execute();
+        $Usuarios = new Usuarios();
+        if ($Usuarios->pesquisaUsuariosNoGrupo($id) == false) {
+            $sql = $this->db->prepare("DELETE FROM grupo_permissao WHERE id = :id");
+            $sql->bindValue(":id", $id);
+            $sql->execute();    
+        }
     }
 
     public function hasPermission($nome) {

@@ -62,6 +62,21 @@ class Perfil extends model {
         return $array;
     }
 
+    public function addPerfil($nomePerfil, $listaPerfil, $id_entidade){
+        $parametros = implode(',', $listaPerfil);
+        $sql = $this->db->prepare("INSERT INTO grupo_permissao SET nomePerfil = :nomePerfil, id_entidade = :id_entidade, parametros = :parametros");
+        $sql->bindValue(":nomePerfil", $nomePerfil);
+        $sql->bindValue(":id_entidade", $id_entidade);
+        $sql->bindValue(":parametros", $parametros);
+        $sql->execute();
+    }
+
+    public function deletPerfil($id){
+        $sql = $this->db->prepare("DELETE FROM grupo_permissao WHERE id = :id");
+        $sql->bindValue(":id", $id);
+        $sql->execute();
+    }
+
     public function hasPermission($nome) {
         if (in_array($nome, $this->permissao)) {
             return true;

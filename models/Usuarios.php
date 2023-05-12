@@ -57,6 +57,20 @@ class Usuarios extends model {
         unset($_SESSION['sessionName']);
     }
 
+    public function getListUsuario($id_entidade){
+        $array = array();
+
+        $sql = $this->db->prepare("SELECT * FROM usuario WHERE id_entidade = :id_entidade");
+        $sql->bindValue(':id_entidade', $id_entidade);
+        $sql->execute();
+
+        if ($sql->rowCount() > 0) {
+            $array = $sql->fetchAll();
+        }
+
+        return $array;
+    }
+
     public function hasPermission($nome){
         return $this->perfil->hasPermission($nome);
     }

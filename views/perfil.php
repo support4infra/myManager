@@ -23,9 +23,10 @@
     </div>
 </div>
 <div class="card">
+    <div class="card-header">
+        <a href="<?php echo BASE_URL ;?>perfil/add" class="btn btn-primary sweet-1 m-b-10">Criar Novo Perfil</a>
+    </div>
     <div class="card-block">
-        <button type="button" class="btn btn-primary sweet-1 m-b-10" data-toggle="modal" data-target="#myModal">Criar Novo Perfil</button>
-        </br></br>
         <div class="table-responsive">
             <table class="table table-striped table-bordered" id="example-2">
                 <thead>
@@ -61,58 +62,3 @@
         </div>
     </div>
 </div>
-
-<div class="modal fade" id="myModal" role="dialog">
-    <div class="modal-dialog modal-lg">
-        <div class="modal-content">
-            <div class="modal-header">
-                <h4 class="modal-title">Criar Novo Perfil</h4>
-            </div>
-            <div class="modal-body">
-                <div class="card-block">
-                    <form method="POST">
-                        <div class="col-sm-12">
-                            <div class="alert alert-warning">
-                                Para selecionar mais que uma persmissão ao Perfil, pressione <strong>"SHIFT"</strong>
-                            </div>
-                        </div>
-                        <div class="form-group row">
-                            <div class="col-sm-12">
-                                <div class="col-sm-12">
-                                    <input type="text" class="form-control" placeholder="Nome do Perfil" require="required">
-                                </div>
-                            </div>
-                        </div>
-                        <div class="form-group row">
-                            <div class="col-sm-12">
-                                <div class="col-sm-12">
-                                    <select name="perfil" class="form-control" multiple>
-                                        <option disabled selected>Selecione as Permissões</option>
-                                        <?php foreach($getListPermissao as $permissao):?>
-                                        <option value="<?php echo $permissao['nome']?>"><?php echo $permissao['nome']?></option>
-                                        <?php endforeach;?>
-                                    </select>
-                                </div>
-                            </div>
-                        </div>        
-                        <div class="form-group row">
-                            <div class="col-sm-12">
-                                <div class="col-sm-4">
-                                    <button type="button" class="btn btn-secondary mobtn" data-dismiss="modal">Cancelar</button>
-                                    <a href="<?php echo BASE_URL ;?>perfil/add" class="btn btn-primary">Salvar</a>
-                                </div>
-                            </div>
-                        </div>
-                    </form>
-                </div>            
-            </div>
-        </div>
-    </div>
-</div>
-
-
-
-
-
-
-

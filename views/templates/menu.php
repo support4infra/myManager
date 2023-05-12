@@ -19,6 +19,11 @@
                             <span class="pcoded-mtext">Perfil</span>
                         </a>
                     </li>
+                    <li class="">
+                        <a href="<?php echo BASE_URL?>usuarios">
+                            <span class="pcoded-mtext">Usuários</span>
+                        </a>
+                    </li>
                 </ul>
             </li>
             <div class="pcoded-navigatio-lavel">BANCADA</div>

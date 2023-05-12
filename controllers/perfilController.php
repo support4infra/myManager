@@ -20,6 +20,7 @@ class perfilController extends controller{
             $dados= array(
                 'nomeEntidade' => $Entidades->getNome(),
                 'getListPerfil' => $Perfil->getListPerfil($Usuarios->getEntidade()),
+                'getListPermissao' => $Perfil->getListPermissao($Usuarios->getEntidade()),
             );       
             $this->loadTemplate('perfil', $dados);
         } else {

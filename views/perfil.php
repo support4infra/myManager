@@ -24,7 +24,7 @@
 </div>
 <div class="card">
     <div class="card-block">
-        <button type="button" class="btn btn-primary sweet-1 m-b-10" data-toggle="modal" data-target="#myModal">Adicionar Perfil</button>
+        <button type="button" class="btn btn-primary sweet-1 m-b-10" data-toggle="modal" data-target="#myModal">Criar Novo Perfil</button>
         </br></br>
         <div class="table-responsive">
             <table class="table table-striped table-bordered" id="example-2">
@@ -88,8 +88,9 @@
                                 <div class="col-sm-12">
                                     <select name="perfil" class="form-control" multiple>
                                         <option disabled selected>Selecione as Permissões</option>
-                                        <option value="Super-Admin">Super-Admin</option>
-                                        <option value="Super-Admin">Analista-Bancada</option>
+                                        <?php foreach($getListPermissao as $permissao):?>
+                                        <option value="<?php echo $permissao['nome']?>"><?php echo $permissao['nome']?></option>
+                                        <?php endforeach;?>
                                     </select>
                                 </div>
                             </div>

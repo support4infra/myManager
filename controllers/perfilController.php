@@ -49,7 +49,6 @@ class perfilController extends controller{
                 'getListPermissao' => $Perfil->getListPermissao($Usuarios->getEntidade()),
             );       
             $this->loadTemplate('perfilAdd', $dados);
-
         } else {
             header("Location: ".BASE_URL);
         }

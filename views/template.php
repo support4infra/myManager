@@ -8,17 +8,17 @@
         <meta name="description" content="#">
         <meta name="keywords" content="flat ui, admin Admin , Responsive, Landing, Bootstrap, App, Template, Mobile, iOS, Android, apple, creative app">
         <meta name="author" content="#">
-        <link rel="icon" href="..\assets\images\favicon.ico" type="image/x-icon">
+        <link rel="icon" href="<?php echo BASE_URL;?>\assets\images\favicon.ico" type="image/x-icon">
         <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,600,800" rel="stylesheet">
-        <link rel="stylesheet" type="text/css" href="..\assets\bower_components\bootstrap\css\bootstrap.min.css">
-        <link rel="stylesheet" type="text/css" href="..\assets\icon\feather\css\feather.css">
-        <link rel="stylesheet" type="text/css" href="..\assets\icon\font-awesome\css\font-awesome.min.css">
-        <link rel="stylesheet" type="text/css" href="..\assets\css\style.css">
-        <link rel="stylesheet" type="text/css" href="..\assets\css\jquery.mCustomScrollbar.css">
-        <link rel="stylesheet" type="text/css" href="..\assets\icon\themify-icons\themify-icons.css">
-        <link rel="stylesheet" type="text/css" href="..\assets\icon\icofont\css\icofont.css">
-        <link rel="stylesheet" type="text/css" href="..\assets\bower_components\bootstrap-tagsinput\css\bootstrap-tagsinput.css">
-        <link rel="stylesheet" type="text/css" href="..\assets\bower_components\switchery\css\switchery.min.css">
+        <link rel="stylesheet" type="text/css" href="<?php echo BASE_URL;?>\assets\bower_components\bootstrap\css\bootstrap.min.css">
+        <link rel="stylesheet" type="text/css" href="<?php echo BASE_URL;?>\assets\icon\feather\css\feather.css">
+        <link rel="stylesheet" type="text/css" href="<?php echo BASE_URL;?>\assets\icon\font-awesome\css\font-awesome.min.css">
+        <link rel="stylesheet" type="text/css" href="<?php echo BASE_URL;?>\assets\css\style.css">
+        <link rel="stylesheet" type="text/css" href="<?php echo BASE_URL;?>\assets\css\jquery.mCustomScrollbar.css">
+        <link rel="stylesheet" type="text/css" href="<?php echo BASE_URL;?>\assets\icon\themify-icons\themify-icons.css">
+        <link rel="stylesheet" type="text/css" href="<?php echo BASE_URL;?>\assets\icon\icofont\css\icofont.css">
+        <link rel="stylesheet" type="text/css" href="<?php echo BASE_URL;?>\assets\bower_components\bootstrap-tagsinput\css\bootstrap-tagsinput.css">
+        <link rel="stylesheet" type="text/css" href="<?php echo BASE_URL;?>\assets\bower_components\switchery\css\switchery.min.css">
     </head>
     <body>
         <div class="theme-loader">
@@ -69,7 +69,7 @@
                 </div>
                 <div class="media chat-messages">
                     <a class="media-left photo-table" href="#!">
-                        <img class="media-object img-radius img-radius m-t-5" src="..\assets\images\avatar-3.jpg" alt="Generic placeholder image">
+                        <img class="media-object img-radius img-radius m-t-5" src="<?php echo BASE_URL;?>\assets\images\avatar-3.jpg" alt="Generic placeholder image">
                     </a>
                     <div class="media-body chat-menu-content">
                         <div class="">
@@ -87,7 +87,7 @@
                     </div>
                     <div class="media-right photo-table">
                         <a href="#!">
-                            <img class="media-object img-radius img-radius m-t-5" src="..\assets\images\avatar-4.jpg" alt="Generic placeholder image">
+                            <img class="media-object img-radius img-radius m-t-5" src="<?php echo BASE_URL;?>\assets\images\avatar-4.jpg" alt="Generic placeholder image">
                         </a>
                     </div>
                 </div>
@@ -117,36 +117,36 @@
                 </div>
             </div>
         </div>
-        <script type="text/javascript" src="..\assets\pages\form-validation\form-validation.js"></script>
-        <script type="text/javascript" src="..\assets\bower_components\jquery-i18next\js\jquery-i18next.min.js"></script>
-        <script type="text/javascript" src="..\assets\bower_components\i18next-browser-languagedetector\js\i18nextBrowserLanguageDetector.min.js"></script>
-        <script type="text/javascript" src="..\assets\bower_components\i18next-xhr-backend\js\i18nextXHRBackend.min.js"></script>
-        <script type="text/javascript" src="..\assets\bower_components\i18next\js\i18next.min.js"></script>
-        <script type="text/javascript" src="..\assets\pages\form-validation\validate.js"></script>
+        <script type="text/javascript" src="<?php echo BASE_URL;?>\assets\pages\form-validation\form-validation.js"></script>
+        <script type="text/javascript" src="<?php echo BASE_URL;?>\assets\bower_components\jquery-i18next\js\jquery-i18next.min.js"></script>
+        <script type="text/javascript" src="<?php echo BASE_URL;?>\assets\bower_components\i18next-browser-languagedetector\js\i18nextBrowserLanguageDetector.min.js"></script>
+        <script type="text/javascript" src="<?php echo BASE_URL;?>\assets\bower_components\i18next-xhr-backend\js\i18nextXHRBackend.min.js"></script>
+        <script type="text/javascript" src="<?php echo BASE_URL;?>\assets\bower_components\i18next\js\i18next.min.js"></script>
+        <script type="text/javascript" src="<?php echo BASE_URL;?>\assets\pages\form-validation\validate.js"></script>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/underscore.js/1.8.3/underscore-min.js"></script>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.10.6/moment.min.js"></script>
         <script type="text/javascript" async="" src="https://www.google-analytics.com/analytics.js"></script>
-        <script type="text/javascript" src="..\assets\bower_components\jquery\js\jquery.min.js"></script>
-        <script type="text/javascript" src="..\assets\bower_components\jquery-ui\js\jquery-ui.min.js"></script>
-        <script type="text/javascript" src="..\assets\bower_components\popper.js\js\popper.min.js"></script>
-        <script type="text/javascript" src="..\assets\bower_components\bootstrap\js\bootstrap.min.js"></script>
-        <script type="text/javascript" src="..\assets\bower_components\jquery-slimscroll\js\jquery.slimscroll.js"></script>
-        <script type="text/javascript" src="..\assets\bower_components\modernizr\js\modernizr.js"></script>
-        <script type="text/javascript" src="..\assets\bower_components\modernizr\js\css-scrollbars.js"></script>
-        <script type="text/javascript" src="..\assets\bower_components\chart.js\js\Chart.js"></script>
-        <script src="..\assets\pages\widget\amchart\amcharts.js"></script>
-        <script src="..\assets\pages\widget\amchart\serial.js"></script>
-        <script src="..\assets\pages\widget\amchart\light.js"></script>
-        <script type="text/javascript" src="..\assets\js\SmoothScroll.js"></script>
-        <script src="..\assets\js\pcoded.min.js"></script>
-        <script src="..\assets\js\jquery.mCustomScrollbar.concat.min.js"></script>
-        <script src="..\assets\js\vartical-layout.min.js"></script>
-        <script type="text/javascript" src="..\assets\pages\dashboard\analytic-dashboard.min.js"></script>
-        <script type="text/javascript" src="..\assets\js\script.js"></script>
+        <script type="text/javascript" src="<?php echo BASE_URL;?>\assets\bower_components\jquery\js\jquery.min.js"></script>
+        <script type="text/javascript" src="<?php echo BASE_URL;?>\assets\bower_components\jquery-ui\js\jquery-ui.min.js"></script>
+        <script type="text/javascript" src="<?php echo BASE_URL;?>\assets\bower_components\popper.js\js\popper.min.js"></script>
+        <script type="text/javascript" src="<?php echo BASE_URL;?>\assets\bower_components\bootstrap\js\bootstrap.min.js"></script>
+        <script type="text/javascript" src="<?php echo BASE_URL;?>\assets\bower_components\jquery-slimscroll\js\jquery.slimscroll.js"></script>
+        <script type="text/javascript" src="<?php echo BASE_URL;?>\assets\bower_components\modernizr\js\modernizr.js"></script>
+        <script type="text/javascript" src="<?php echo BASE_URL;?>\assets\bower_components\modernizr\js\css-scrollbars.js"></script>
+        <script type="text/javascript" src="<?php echo BASE_URL;?>\assets\bower_components\chart.js\js\Chart.js"></script>
+        <script src="<?php echo BASE_URL;?>\assets\pages\widget\amchart\amcharts.js"></script>
+        <script src="<?php echo BASE_URL;?>\assets\pages\widget\amchart\serial.js"></script>
+        <script src="<?php echo BASE_URL;?>\assets\pages\widget\amchart\light.js"></script>
+        <script type="text/javascript" src="<?php echo BASE_URL;?>\assets\js\SmoothScroll.js"></script>
+        <script src="<?php echo BASE_URL;?>\assets\js\pcoded.min.js"></script>
+        <script src="<?php echo BASE_URL;?>\assets\js\jquery.mCustomScrollbar.concat.min.js"></script>
+        <script src="<?php echo BASE_URL;?>\assets\js\vartical-layout.min.js"></script>
+        <script type="text/javascript" src="<?php echo BASE_URL;?>\assets\pages\dashboard\analytic-dashboard.min.js"></script>
+        <script type="text/javascript" src="<?php echo BASE_URL;?>\assets\js\script.js"></script>
         <script async="" src="https://www.googletagmanager.com/gtag/js?id=UA-23581568-13"></script>
-        <script type="text/javascript" src="..\assets\bower_components\bootstrap-multiselect\js\bootstrap-multiselect.js"></script>
-        <script type="text/javascript" src="..\assets\pages\advance-elements\select2-custom.js"></script>
-        <script type="text/javascript" src="..\assets\pages\advance-elements\swithces.js"></script>
+        <script type="text/javascript" src="<?php echo BASE_URL;?>\assets\bower_components\bootstrap-multiselect\js\bootstrap-multiselect.js"></script>
+        <script type="text/javascript" src="<?php echo BASE_URL;?>\assets\pages\advance-elements\select2-custom.js"></script>
+        <script type="text/javascript" src="<?php echo BASE_URL;?>\assets\pages\advance-elements\swithces.js"></script>
         <script>
             window.dataLayer = window.dataLayer || [];
             function gtag(){dataLayer.push(arguments);}

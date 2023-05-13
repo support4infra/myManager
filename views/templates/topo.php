@@ -6,7 +6,7 @@
                             <i class="feather icon-menu"></i>
                         </a>
                         <a href="<?php echo BASE_URL;?>">
-                            <img class="img-fluid" src="..\assets\images\logo.png" alt="Theme-Logo">
+                            <img class="img-fluid" src="<?php echo BASE_URL;?>\assets\images\logo.png" alt="Theme-Logo">
                         </a>
                         <a class="mobile-options">
                             <i class="feather icon-more-horizontal"></i>
@@ -35,7 +35,7 @@
                                         </li>
                                         <li>
                                             <div class="media">
-                                                <img class="d-flex align-self-center img-radius" src="..\assets\images\avatar-4.jpg" alt="Generic placeholder image">
+                                                <img class="d-flex align-self-center img-radius" src="<?php echo BASE_URL;?>\assets\images\avatar-4.jpg" alt="Generic placeholder image">
                                                 <div class="media-body">
                                                     <h5 class="notification-user">Cliente 1</h5>
                                                     <p class="notification-msg">NXFilter Vencendo.</p>
@@ -45,7 +45,7 @@
                                         </li>
                                         <li>
                                             <div class="media">
-                                                <img class="d-flex align-self-center img-radius" src="..\assets\images\avatar-3.jpg" alt="Generic placeholder image">
+                                                <img class="d-flex align-self-center img-radius" src="<?php echo BASE_URL;?>\assets\images\avatar-3.jpg" alt="Generic placeholder image">
                                                 <div class="media-body">
                                                     <h5 class="notification-user">Cliente 2</h5>
                                                     <p class="notification-msg">Office365 vencendo.</p>
@@ -59,7 +59,7 @@
                             <li class="user-profile header-notification">
                                 <div class="dropdown-primary dropdown">
                                     <div class="dropdown-toggle" data-toggle="dropdown">
-                                        <img src="..\assets\images\avatar-4.jpg" class="img-radius" alt="User-Profile-Image">
+                                        <img src="<?php echo BASE_URL;?>\assets\images\avatar-4.jpg" class="img-radius" alt="User-Profile-Image">
                                         <span><strong><?php echo $_SESSION['sessionName'] ;?></strong></span>
                                         <i class="feather icon-chevron-down"></i>
                                     </div>

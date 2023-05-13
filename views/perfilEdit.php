@@ -22,10 +22,9 @@
         </div>
     </div>
 </div>
-
 <div class="card">
     <div class="card-header">
-        <h4 >Criar Novo Perfil</h4>
+        <h4 >Editar Perfil</h4>
     </div>
     <div class="card-block">
         <form method="POST">
@@ -37,7 +36,7 @@
             <div class="form-group row">
                 <div class="col-sm-12">
                     <div class="col-sm-4">
-                        <input type="text" class="form-control" name="nome" placeholder="Nome do Perfil">
+                        <input type="text" class="form-control" name="nome" value="<?php echo $perfilInfo['nome'];?>" placeholder="Nome do Perfil">
                     </div>
                 </div>
             </div>

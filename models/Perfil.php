@@ -62,6 +62,20 @@ class Perfil extends model {
         return $array;
     }
 
+    public function getPerfil($id, $id_entidade){
+        $array = array();
+
+        $sql = $this->db->prepare("SELECT * FROM grupo_permissao WHERE id = :id AND id_entidade = :id_entidade");
+        $sql->bindValue(':id', $id);
+        $sql->bindValue(':id_entidade', $id_entidade);
+        $sql->execute();
+
+        if ($sql->rowCount() > 0) {
+            $array = $sql->fetch();
+        }
+        return $array;
+    }
+
     public function addPerfil($nomePerfil, $listaPerfil, $id_entidade){
         $parametros = implode(',', $listaPerfil);
         $sql = $this->db->prepare("INSERT INTO grupo_permissao SET nome = :nomePerfil, id_entidade = :id_entidade, parametros = :parametros");
@@ -70,7 +84,7 @@ class Perfil extends model {
         $sql->bindValue(":parametros", $parametros);
         $sql->execute();
     }
-
+    
     public function deletPerfil($id){
         $Usuarios = new Usuarios();
         if ($Usuarios->pesquisaUsuariosNoGrupo($id) == false) {

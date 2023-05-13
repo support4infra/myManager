@@ -2,23 +2,33 @@
 class Bancada extends model {
 
     public function getBancada(){
-        $sql = "SELECT * FROM glpi_consult_website WHERE categoria like 'INFRAESTRUTURA > EQUIPAMENTO BANCADA%' order by ticket desc;";
-        $sql = $this->db->query($sql);
+        $array = array();
+
+        $sql = $this->db->prepare("SELECT * FROM glpi_consult_website WHERE categoria like 'INFRAESTRUTURA > EQUIPAMENTO BANCADA%' order by ticket desc;");
+        $sql->execute();
 
         if ($sql->rowCount() > 0) {
-            $sql = $sql->fetch();
-        } else {
-            return 0;
+            $array = $sql->fetchAll();
         }
+
+        return $array;
     }
 
     public function getSpecificBancada($ticket){
-        $sql = "SELECT * FROM glpi_consult_website WHERE ticket = :ticket AND categoria like 'INFRAESTRUTURA > EQUIPAMENTO BANCADA%'";
-        $sql = $this->db->query($sql);
+        $sql = $this->db->prepare("SELECT * FROM glpi_consult_website WHERE ticket = :ticket AND categoria like 'INFRAESTRUTURA > EQUIPAMENTO BANCADA%'");
         $sql->bindValue(':ticket', $ticket);
         $sql->execute();
-
         $sql = $sql->fetch();
+
+        //Condição pra verificar se o ticket ta fechado, solucionado, nao existe ou nao pertence a bancada
+        /*if(empty($row_chamado)){
+            header('location:index.php?ticket=0');
+        }else if($row_chamado['status'] == 6){
+            header('location:index.php?ticket=1');
+        }else if($row_chamado['status'] == 5){
+            header('location:index.php?ticket=2');
+        }
+        VER COMO SERÁ FEITO ESSA PARTE*/
 
         //Variaveis
         $emails = "";
@@ -33,12 +43,13 @@ class Bancada extends model {
             //Caso a ID seja diferente de 0, o requerente tem cadastro no glpi.
             if($id_usuario != 0){
                 //Pesquisa no banco as usuários com acesso criado no glpi - Solução para campos do e-mail em branco na View glpi_consult_website
-                $sql2 = "SELECT name FROM glpi_users WHERE id = :id_usuario";
-                $sql2 = $this->db->query($sql2);
+                $sql2 = "SELECT uexis.email as email_glpi_existente FROM glpi_consult_website glpi inner join glpi_useremails uexis on glpi.id_usuario = uexis.users_id WHERE glpi.ticket = :ticket AND glpi.id_usuario = :id_usuario";
+                $sql2 = $this->db->prepare($sql2);
+                $sql2->bindValue(':ticket', $ticket);
                 $sql2->bindValue(':id_usuario', $id_usuario);
                 $sql2->execute();
 
-                $email_linha_atual = $sql2['name'];
+                $email_linha_atual = $sql2['email_glpi_existente'];
             }else{
                 $email_linha_atual = $sql['email_inserido'];
             }
@@ -59,6 +70,12 @@ class Bancada extends model {
         } else {
             return false;
         }
+
+        //Condição pra verificar se o ticket possui somente o e-mail de atendimento, caso possua devem inserir no chamado o e-mail de alguem
+        /*if($emails == "formulario@4infra.com.br"){
+            header('location:index.php?ticket=3');
+        }
+        VER COMO SERÁ FEITO ESSA PARTE*/
     }
 
     public function insertEndBancada($numero_chamado, $data_retirada, $nome_resposavel_retirada, $documento_resposavel_retirada, $telefone_resposavel_retirada, $tecnico_resposavel_entrega, $observacao){

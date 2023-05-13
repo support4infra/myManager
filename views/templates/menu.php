@@ -27,6 +27,36 @@
                 </ul>
             </li>
             <div class="pcoded-navigatio-lavel">BANCADA</div>
+            <li class="">
+                <a href="<?php echo BASE_URL?>dashboard">
+                    <span class="pcoded-micon"><i class="fa fa-dashboard"></i></span>
+                    <span class="pcoded-mtext">Dashboard</span>
+                </a>
+            </li>
+            <li class="pcoded-hasmenu">
+                <a href="javascript:void(0)">
+                    <span class="pcoded-micon"><i class="fa fa-desktop"></i></span>
+                    <span class="pcoded-mtext">Administração</span>
+                </a>
+            </li>
+            <li class="pcoded-hasmenu">
+                <a href="javascript:void(0)">
+                    <span class="pcoded-micon"><i class="fa fa-desktop"></i></span>
+                    <span class="pcoded-mtext">Ações</span>
+                </a>
+                <ul class="pcoded-submenu">
+                    <li class="">
+                        <a href="<?php echo BASE_URL?>entradaMaquina">
+                            <span class="pcoded-mtext">Entrada de Máquina</span>
+                        </a>
+                    </li>
+                    <li class="">
+                        <a href="<?php echo BASE_URL?>retiradaMaquina">
+                            <span class="pcoded-mtext">Retirada de Máquina</span>
+                        </a>
+                    </li>
+                </ul>
+            </li>
         </ul>
     </div>
 </nav>

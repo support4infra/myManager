@@ -36,19 +36,20 @@ class usuariosController extends controller{
         $Perfil = new Perfil();
 
         if ($Usuarios->hasPermission('Administração')) { 
-            if (isset($_POST['nome']) && !empty($_POST['nome'])) {
-                $nomePerfil = addslashes($_POST['nome']);
-                $listaPerfil = $_POST['permissoes'];
-                $Perfil->addPerfil($nomePerfil, $listaPerfil, $Usuarios->getEntidade());
-                header("Location: ".BASE_URL."perfil");
+            if (isset($_POST['usuario']) && !empty($_POST['usuario'])) {
+                $usuario = addslashes($_POST['usuario']);
+                $nome = addslashes($_POST['nome']);
+                $senha = addslashes(md5($_POST['senha']));
+                $perfil = addslashes($_POST['perfil']);
+                $Perfil->addPerfil($usuario, $nome, $senha, $perfil, $Usuarios->getEntidade());
+                header("Location: ".BASE_URL."usuarios");
             }
 
             $dados= array(
                 'nomeEntidade' => $Entidades->getNome(),
                 'getListPerfil' => $Perfil->getListPerfil($Usuarios->getEntidade()),
-                'getListPermissao' => $Perfil->getListPermissao($Usuarios->getEntidade()),
             );       
-            $this->loadTemplate('perfilAdd', $dados);
+            $this->loadTemplate('usuariosAdd', $dados);
         } else {
             header("Location: ".BASE_URL);
         }

@@ -60,7 +60,7 @@ class Usuarios extends model {
     public function getListUsuario($id_entidade){
         $array = array();
 
-        $sql = $this->db->prepare("SELECT * FROM usuario WHERE id_entidade = :id_entidade");
+        $sql = $this->db->prepare("SELECT usuario.id, usuario.nome, usuario.email, grupo_permissao.nome as nomegrupo FROM usuario LEFT JOIN grupo_permissao ON grupo_permissao.id = usuario.grupo WHERE usuario.id_entidade = :id_entidade");
         $sql->bindValue(':id_entidade', $id_entidade);
         $sql->execute();
 

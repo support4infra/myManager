@@ -93,6 +93,8 @@ class perfilController extends controller{
             if ($id != 1) {
                 $Perfil->deletPerfil($id);
                 header("Location: ".BASE_URL."perfil");
+            } else {
+                header("Location: ".BASE_URL."perfil");
             }
         } else {
             header("Location: ".BASE_URL."perfil");

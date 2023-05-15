@@ -11,7 +11,7 @@
             <div class="page-header-breadcrumb">
                 <ul class="breadcrumb-title">
                     <li class="breadcrumb-item">
-                        <a href="<?php echo BASE_URL;?>dashboard"> <i class="fa fa-dashboard"></i> </a>
+                        <a href="<?php echo BASE_URL;?>dashboard"> <i class="fa fa-street-view"></i> </a>
                     </li>
                     <li class="breadcrumb-item">Administração
                     </li>

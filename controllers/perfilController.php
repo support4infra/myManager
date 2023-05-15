@@ -61,11 +61,14 @@ class perfilController extends controller{
         $Perfil = new Perfil();
 
         if ($Usuarios->hasPermission('Administração')) { 
-            if (isset($_POST['nome']) && !empty($_POST['nome'])) {
-                $nomePerfil = addslashes($_POST['nome']);
-                $listaPerfil = $_POST['permissoes'];
-                $Perfil->addPerfil($nomePerfil, $listaPerfil, $Usuarios->getEntidade());
-                header("Location: ".BASE_URL."perfil");
+
+            if ($_POST['nome'] != 'Super-Admin') {
+                if (isset($_POST['nome']) && !empty($_POST['nome'])) {
+                    $nomePerfil = addslashes($_POST['nome']);
+                    $listaPerfil = $_POST['permissoes'];
+                    $Perfil->editPerfil($nomePerfil, $listaPerfil, $id, $Usuarios->getEntidade());
+                    header("Location: ".BASE_URL."perfil");
+                }
             }
 
             $dados= array(
@@ -89,8 +92,6 @@ class perfilController extends controller{
         if ($Usuarios->hasPermission('Administração')) {
             if ($id != 1) {
                 $Perfil->deletPerfil($id);
-                header("Location: ".BASE_URL."perfil");
-            } else {
                 header("Location: ".BASE_URL."perfil");
             }
         } else {

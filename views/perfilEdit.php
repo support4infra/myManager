@@ -44,9 +44,9 @@
                 <div class="col-sm-12">
                     <div class="col-sm-4">
                         <select name="permissoes[]" class="form-control" multiple>
-                            <option disabled selected>Selecione as Permissões</option>
+                            <option disabled>Selecione as Permissões</option>
                             <?php foreach($getListPermissao as $permissao):?>
-                            <option value="<?php echo $permissao['id'];?>"><?php echo $permissao['nome'];?></option>
+                            <option value="<?php echo $permissao['id'];?>" <?php echo (in_array($permissao['id'],$perfilInfo['parametros']))?'selected':'' ;?>><?php echo $permissao['nome'];?></option>
                             <?php endforeach;?>
                         </select>
                     </div>

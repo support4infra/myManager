@@ -72,6 +72,7 @@ class Perfil extends model {
 
         if ($sql->rowCount() > 0) {
             $array = $sql->fetch();
+            $array['parametros'] = explode(',', $array['parametros']);
         }
         return $array;
     }
@@ -81,6 +82,16 @@ class Perfil extends model {
         $sql = $this->db->prepare("INSERT INTO grupo_permissao SET nome = :nomePerfil, id_entidade = :id_entidade, parametros = :parametros");
         $sql->bindValue(":nomePerfil", $nomePerfil);
         $sql->bindValue(":id_entidade", $id_entidade);
+        $sql->bindValue(":parametros", $parametros);
+        $sql->execute();
+    }
+
+    public function editPerfil($nomePerfil, $listaPerfil, $id, $id_entidade){
+        $parametros = implode(',', $listaPerfil);
+        $sql = $this->db->prepare("UPDATE grupo_permissao SET nome = :nomePerfil, id_entidade = :id_entidade, parametros = :parametros WHERE id = :id");
+        $sql->bindValue(":nomePerfil", $nomePerfil);
+        $sql->bindValue(":id_entidade", $id_entidade);
+        $sql->bindValue(":id", $id);
         $sql->bindValue(":parametros", $parametros);
         $sql->execute();
     }

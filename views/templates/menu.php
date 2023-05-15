@@ -2,7 +2,7 @@
     <div class="pcoded-inner-navbar main-menu">
         </br></br>
         <ul class="pcoded-item pcoded-left-item">
-            <li class="<?php echo ($_SERVER["REQUEST_URI"] == "/dashboard")?"active":"";?>">
+            <li class="<?php echo ($_SERVER["REQUEST_URI"] == "/" || $_SERVER["REQUEST_URI"] == "/dashboard")?"active":"";?>">
                 <a href="<?php echo BASE_URL?>dashboard">
                     <span class="pcoded-micon"><i class="fa fa-dashboard"></i></span>
                     <span class="pcoded-mtext">Dashboard</span>

@@ -24,29 +24,29 @@
 </div>
 <div class="card">
     <div class="card-header">
-        <h4 >Criar Novo Usuário</h4>
+        <h4 >Editar Usuário</h4>
     </div>
     <div class="card-block">
         <form method="POST">
             <div class="form-group row">
                 <label class="col-sm-1 col-form-label">E-mail</label>
                 <div class="col-sm-5">
-                    <input type="email" name="email" class="form-control" placeholder="usuario.segundo@email.com.br">
+                    <input type="email" name="email" class="form-control" placeholder="usuario.segundo@email.com.br" value="<?php echo $getUsuario['email'] ;?>" <?php echo ($getUsuario['id'] == 1)? "disabled":"";?>>
                 </div>
                 <label class="col-sm-1 col-form-label">Nome</label>
                 <div class="col-sm-5">
-                    <input type="text" name="nome" class="form-control" placeholder="Usuário Segundo">
+                    <input type="text" name="nome" class="form-control" placeholder="Usuário Segundo" value="<?php echo $getUsuario['nome'] ;?>">                  
                 </div>
             </div>
             <div class="form-group row">
                 <label class="col-sm-1 col-form-label">Senha</label>
                 <div class="col-sm-5">
-                    <input type="password" name="senha" class="form-control" placeholder="********">
+                    <input type="password" name="senha" class="form-control" placeholder="********" value="<?php echo $getUsuario['password'] ;?>">
                 </div>
                 <label class="col-sm-1 col-form-label">Perfil</label>
                 <div class="col-sm-5">
-                    <select name="grupo" class="form-control">
-                        <option disabled selected>Selecione o Perfil</option>
+                    <select name="grupo" class="form-control" <?php echo ($getUsuario['id'] == 1)? "disabled":"";?>>
+                        <option disabled selected><?php echo ($getUsuario['id'] == 1)? "Super-Admin":"Selecione o Perfil";?></option>
                         <?php foreach($getListPerfil as $perfil):?>
                         <option value="<?php echo $perfil['id'];?>"><?php echo $perfil['nome'];?></option>
                         <?php endforeach;?>

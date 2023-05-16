@@ -71,6 +71,21 @@ class Usuarios extends model {
         return $array;
     }
 
+    public function getUsuario($id, $id_entidade){
+        $array = array();
+
+        $sql = $this->db->prepare("SELECT usuario.id, usuario.nome, usuario.password, usuario.email, grupo_permissao.nome as nomegrupo FROM usuario LEFT JOIN grupo_permissao ON grupo_permissao.id = usuario.grupo WHERE usuario.id_entidade = :id_entidade AND usuario.id = :id");
+        $sql->bindValue(':id', $id);
+        $sql->bindValue(':id_entidade', $id_entidade);
+        $sql->execute();
+
+        if ($sql->rowCount() > 0) {
+            $array = $sql->fetch();
+        }
+
+        return $array;
+    }
+
     public function hasPermission($nome){
         return $this->perfil->hasPermission($nome);
     }
@@ -97,5 +112,31 @@ class Usuarios extends model {
         } else {
             return true;
         }
+    }
+
+    public function addUsuario($email, $nome, $password, $grupo, $id_entidade){
+        $sql = $this->db->prepare("INSERT INTO usuario SET id_entidade = :id_entidade, grupo = :grupo, nome = :nome, email = :email, password = :password");
+        $sql->bindValue(":id_entidade", $id_entidade);
+        $sql->bindValue(":grupo", $grupo);
+        $sql->bindValue(":nome", $nome);
+        $sql->bindValue(":email", $email);
+        $sql->bindValue(":password", $password);
+        $sql->execute();
+    }
+
+    public function editUsuario($email, $nome, $password, $grupo, $id){
+        $sql = $this->db->prepare("UPDATE usuario SET email = :email, nome = :nome, password = :password, grupo = :grupo WHERE id = :id");
+        $sql->bindValue(":email", $email);
+        $sql->bindValue(":nome", $nome);
+        $sql->bindValue(":password", $password);
+        $sql->bindValue(":grupo", $grupo);
+        $sql->bindValue(":id", $id);
+        $sql->execute();
+    }
+
+    public function deletUsuario($id){
+        $sql = $this->db->prepare("DELETE FROM usuario WHERE id = :id");
+        $sql->bindValue(":id", $id);
+        $sql->execute();
     }
 }

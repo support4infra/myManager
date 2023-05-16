@@ -86,7 +86,6 @@ class perfilController extends controller{
     public function delet($id){
         $Usuarios = new Usuarios();
         $Usuarios->setLoggedUsuario();
-        $Entidades = new Entidades($Usuarios->getEntidade());
         $Perfil = new Perfil();
 
         if ($Usuarios->hasPermission('Administração')) {

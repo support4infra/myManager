@@ -24,6 +24,7 @@ class Usuarios extends model {
             $_SESSION['sessionEmail'] = $row['email'];
             $_SESSION['sessionId'] = $row['id'];
             $_SESSION['sessionIdEntidade'] = $row['id_entidade'];
+            $_SESSION['sessionGrupo'] = $row['grupo'];
             return true;
         } else {
             return false;

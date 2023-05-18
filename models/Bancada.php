@@ -14,11 +14,13 @@ class Bancada extends model {
         return $array;
     }
 
-    public function getSpecificBancada($ticket){
-        $sql = $this->db->prepare("SELECT * FROM glpi_consult_website WHERE ticket = :ticket AND categoria like 'INFRAESTRUTURA > EQUIPAMENTO BANCADA%'");
-        $sql->bindValue(':ticket', $ticket);
+    public function getSpecificBancada($numeroChamado){
+        $sql = $this->db->prepare("SELECT * FROM glpi_consult_website WHERE ticket = :numeroChamado AND categoria like 'INFRAESTRUTURA > EQUIPAMENTO BANCADA%'");
+        $sql->bindValue(':numeroChamado', $numeroChamado);
         $sql->execute();
         $sql = $sql->fetch();
+        var_dump($sql);
+        exit;
 
         //Condição pra verificar se o ticket ta fechado, solucionado, nao existe ou nao pertence a bancada
         /*if(empty($row_chamado)){
@@ -29,7 +31,7 @@ class Bancada extends model {
             header('location:index.php?ticket=2');
         }
         VER COMO SERÁ FEITO ESSA PARTE*/
-
+/*
         //Variaveis
         $emails = "";
         $i = 0;
@@ -72,17 +74,19 @@ class Bancada extends model {
         }
 
         //Condição pra verificar se o ticket possui somente o e-mail de atendimento, caso possua devem inserir no chamado o e-mail de alguem
-        /*if($emails == "formulario@4infra.com.br"){
+        if($emails == "formulario@4infra.com.br"){
             header('location:index.php?ticket=3');
         }
         VER COMO SERÁ FEITO ESSA PARTE*/
+        
     }
 
     public function insertEndBancada($numero_chamado, $data_retirada, $nome_resposavel_retirada, $documento_resposavel_retirada, $telefone_resposavel_retirada, $tecnico_resposavel_entrega, $observacao){
+       /*
         //Data no fuso horario de SP
         date_default_timezone_set('America/Sao_Paulo');
         
-        /* COMO POSSO PEGAR A VARIAVEL DO INPUT DA FOTO?
+        COMO POSSO PEGAR A VARIAVEL DO INPUT DA FOTO?
         //pega a extensao do arquivo
         $extensao = strtolower(substr($_FILES['arquivo']['name'], -4)); 
         //Codição para adicionar um . no inicio da extensão para extensões que não entregam com o .
@@ -96,7 +100,7 @@ class Bancada extends model {
         $diretorio = "upload/"; 
         //Move o arquivo para a pasta que irá ficar salvo
         move_uploaded_file($_FILES['arquivo']['tmp_name'], $diretorio.$novo_nome_arquivo);
-        */
+        
 
 
         //Texto da Interação do chamado e 'ADDSLASHER' para nao conflitar as aspas com o banco
@@ -125,8 +129,8 @@ class Bancada extends model {
             return true;
         } else {
             return false;
-        }
+        }*/
     }
-
+    
 
 }

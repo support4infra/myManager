@@ -36,23 +36,17 @@
             <li class="pcoded-hasmenu">
                 <a href="javascript:void(0)">
                     <span class="pcoded-micon"><i class="fa fa-desktop"></i></span>
-                    <span class="pcoded-mtext">Administração</span>
-                </a>
-            </li>
-            <li class="pcoded-hasmenu">
-                <a href="javascript:void(0)">
-                    <span class="pcoded-micon"><i class="fa fa-desktop"></i></span>
                     <span class="pcoded-mtext">Ações</span>
                 </a>
                 <ul class="pcoded-submenu">
                     <li class="">
-                        <a href="<?php echo BASE_URL?>entradaMaquina">
-                            <span class="pcoded-mtext">Entrada de Máquina</span>
+                        <a href="<?php echo BASE_URL?>entradaEquipamento">
+                            <span class="pcoded-mtext">Entrada de Equipamento</span>
                         </a>
                     </li>
                     <li class="">
-                        <a href="<?php echo BASE_URL?>retiradaMaquina">
-                            <span class="pcoded-mtext">Retirada de Máquina</span>
+                        <a href="<?php echo BASE_URL?>retiradaEquipamento">
+                            <span class="pcoded-mtext">Retirada de Equipamento</span>
                         </a>
                     </li>
                 </ul>

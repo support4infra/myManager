@@ -19,8 +19,6 @@ class Bancada extends model {
         $sql->bindValue(':numeroChamado', $numeroChamado);
         $sql->execute();
         $sql = $sql->fetch();
-        var_dump($sql);
-        exit;
 
         //Condição pra verificar se o ticket ta fechado, solucionado, nao existe ou nao pertence a bancada
         /*if(empty($row_chamado)){

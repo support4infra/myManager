@@ -23,6 +23,8 @@ class retiradaEquipamentoController extends controller{
                 $numeroChamado = addslashes($_POST['numeroChamado']);
                 $Bancada->getSpecificBancada($numeroChamado);
             }
+        }else {
+            header("Location: ".BASE_URL);
         }
 
         $this->loadTemplate('retiradaEquipamento', $dados);

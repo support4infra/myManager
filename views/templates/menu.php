@@ -26,6 +26,27 @@
                     </li>
                 </ul>
             </li>
+
+            <div class="pcoded-navigatio-lavel">CHAT-4</div>
+            <li class="<?php echo ($_SERVER["REQUEST_URI"] == "/dashboardChat4")?"active":"";?>">
+                <a href="<?php echo BASE_URL?>dashboardChat4">
+                    <span class="pcoded-micon"><i class="fa fa-dashboard"></i></span>
+                    <span class="pcoded-mtext">Painel CHAT-4</span>
+                </a>
+            </li>
+            <li class="<?php echo ($_SERVER["REQUEST_URI"] == "/usuarioChat4")?"active":"";?>">
+                <a href="<?php echo BASE_URL?>usuarioChat4">
+                    <span class="pcoded-micon"><i class="fa fa-user-plus"></i></span>
+                    <span class="pcoded-mtext">Usuários</span>
+                </a>
+            </li>
+            <li class="<?php echo ($_SERVER["REQUEST_URI"] == "/chat4")?"active":"";?>">
+                <a href="<?php echo BASE_URL?>chat4">
+                    <span class="pcoded-micon"><i class="fa fa-user-plus"></i></span>
+                    <span class="pcoded-mtext">CHAT-4</span>
+                </a>
+            </li>
+
             <div class="pcoded-navigatio-lavel">BANCADA</div>
             <li class="">
                 <a href="<?php echo BASE_URL?>dashboard">

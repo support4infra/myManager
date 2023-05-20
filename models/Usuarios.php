@@ -13,21 +13,30 @@ class Usuarios extends model {
     }
 
     public function doLogin($email, $password){
-        $sql = $this->db->prepare("SELECT * FROM usuario WHERE email = :email AND password = :password");
-        $sql->bindValue(':email', $email);
-        $sql->bindValue(':password', md5($password));
+        $sql = $this->db->prepare("SELECT COUNT(*) as c FROM usuario WHERE email = :email");
+        $sql->bindValue(":email", $email);
         $sql->execute();
-
-        if($sql->rowCount() > 0){
-            $row = $sql->fetch();
-            $_SESSION['sessionName'] = $row['nome'];
-            $_SESSION['sessionEmail'] = $row['email'];
-            $_SESSION['sessionId'] = $row['id'];
-            $_SESSION['sessionIdEntidade'] = $row['id_entidade'];
-            $_SESSION['sessionGrupo'] = $row['grupo'];
-            return true;
+        $row = $sql->fetch();
+        if ($row['c'] == '0') {
+            return "0";
         } else {
-            return false;
+            $sql = $this->db->prepare("SELECT * FROM usuario WHERE email = :email AND password = :password");
+            $sql->bindValue(':email', $email);
+            $sql->bindValue(':password', md5($password));
+            $sql->execute();
+
+            if($sql->rowCount() > 0){
+                $row = $sql->fetch();
+                $_SESSION['sessionName'] = $row['nome'];
+                $_SESSION['sessionEmail'] = $row['email'];
+                $_SESSION['sessionId'] = $row['id'];
+                $_SESSION['sessionIdEntidade'] = $row['id_entidade'];
+                $_SESSION['sessionGrupo'] = $row['grupo'];
+                return true;
+            } else {
+                return false;
+            }
+            return "1";
         }
     }
 
@@ -116,13 +125,23 @@ class Usuarios extends model {
     }
 
     public function addUsuario($email, $nome, $password, $grupo, $id_entidade){
-        $sql = $this->db->prepare("INSERT INTO usuario SET id_entidade = :id_entidade, grupo = :grupo, nome = :nome, email = :email, password = :password");
-        $sql->bindValue(":id_entidade", $id_entidade);
-        $sql->bindValue(":grupo", $grupo);
-        $sql->bindValue(":nome", $nome);
+        $sql = $this->db->prepare("SELECT COUNT(*) as c FROM usuario WHERE email = :email");
         $sql->bindValue(":email", $email);
-        $sql->bindValue(":password", $password);
         $sql->execute();
+        $row = $sql->fetch();
+        if ($row['c'] == '0') {
+            $sql = $this->db->prepare("INSERT INTO usuario SET id_entidade = :id_entidade, grupo = :grupo, nome = :nome, email = :email, password = :password");
+            $sql->bindValue(":id_entidade", $id_entidade);
+            $sql->bindValue(":grupo", $grupo);
+            $sql->bindValue(":nome", $nome);
+            $sql->bindValue(":email", $email);
+            $sql->bindValue(":password", $password);
+            $sql->execute();
+            return '1';
+        } else {
+            return '0';
+        }
+        
     }
 
     public function editUsuario($email, $nome, $password, $grupo, $id){

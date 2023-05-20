@@ -30,9 +30,9 @@
                                         </div>
                                     </div>
                                     <p class="text-muted text-center p-b-5">SGU - Sistema de Gestão Unificado</p>
-                                    <?php if(isset($error) && !empty($error)):?>
-                                        <div class="alert alert-danger">
-                                            <strong><?php echo $error;?></strong>
+                                    <?php if(isset($alerta) && !empty($alerta)):?>
+                                        <div class="alert alert-danger text-center">
+                                            <strong><?php echo $alerta;?></strong>
                                         </div>
                                     <?php endif; ?>
                                     <div class="form-group form-primary">

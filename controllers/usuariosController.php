@@ -34,21 +34,25 @@ class usuariosController extends controller{
         $Usuarios->setLoggedUsuario();
         $Entidades = new Entidades($Usuarios->getEntidade());
         $Perfil = new Perfil();
-
+        $dados = array(
+            'nomeEntidade' => $Entidades->getNome(),
+            'getListPerfil' => $Perfil->getListPerfil($Usuarios->getEntidade()),
+        );    
         if ($Usuarios->hasPermission('Administração')) { 
             if (isset($_POST['email']) && !empty($_POST['email'])) {
                 $email = addslashes($_POST['email']);
                 $nome = addslashes($_POST['nome']);
                 $password = addslashes(md5($_POST['senha']));
                 $grupo = addslashes($_POST['grupo']);
-                $Usuarios->addUsuario($email, $nome, $password, $grupo, $Usuarios->getEntidade());
-                header("Location: ".BASE_URL."usuarios");
+                $retorno = $Usuarios->addUsuario($email, $nome, $password, $grupo, $Usuarios->getEntidade());
+                if ($retorno == "1") {
+                    header("Location: ".BASE_URL."usuarios");
+                }else {
+                    $dados['alerta'] = "Usuário já se encontra cadastrado!";
+                }
+                
             }
-
-            $dados= array(
-                'nomeEntidade' => $Entidades->getNome(),
-                'getListPerfil' => $Perfil->getListPerfil($Usuarios->getEntidade()),
-            );       
+   
             $this->loadTemplate('usuariosAdd', $dados);
         } else {
             header("Location: ".BASE_URL);

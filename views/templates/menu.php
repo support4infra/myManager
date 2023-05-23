@@ -26,6 +26,20 @@
                     </li>
                 </ul>
             </li>
+            <div class="pcoded-navigatio-lavel">COMERCIAL</div>
+            <li class="pcoded-hasmenu <?php echo ($_SERVER["REQUEST_URI"] == "/dominio")?"active pcoded-trigger":"";?>">
+                <a href="javascript:void(0)">
+                    <span class="pcoded-micon"><i class="fa fa-filter"></i></span>
+                    <span class="pcoded-mtext">Leads</span>
+                </a>
+                <ul class="pcoded-submenu">
+                    <li class="<?php echo ($_SERVER["REQUEST_URI"] == "/dominio")?"active":"";?>">
+                        <a href="<?php echo BASE_URL?>dominio">
+                            <span class="pcoded-mtext">Domínio</span>
+                        </a>
+                    </li>
+                </ul>
+            </li>
             <div class="pcoded-navigatio-lavel">API</div>
             <li class="pcoded-hasmenu">
                 <a href="javascript:void(0)">

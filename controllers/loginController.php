@@ -16,14 +16,13 @@ class loginController extends controller{
         if (isset($_POST['email']) && !empty($_POST['email'])) {
             $email = addslashes($_POST['email']);
             $password = addslashes($_POST['password']);
-
             $Usuarios = new Usuarios();
-
-            if ($Usuarios->doLogin($email, $password)) {
+            $retorno = $Usuarios->doLogin($email, $password);
+            if ($retorno == "1") {
                 header("Location: ".BASE_URL);
                 exit;
             } else {
-                $dados['error:'] = "E-mail e/ou senha errados!";
+                $dados['alerta'] = "E-mail e/ou senha inválido!";
             }
         }
 

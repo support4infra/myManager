@@ -22,6 +22,7 @@
         </div>
     </div>
 </div>
+
 <div class="card">
     <div class="card-header">
         <a href="<?php echo BASE_URL ;?>usuarios/add" class="btn btn-primary sweet-1 m-b-10">Criar Novo Usuário</a>

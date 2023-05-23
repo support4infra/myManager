@@ -22,6 +22,13 @@
         </div>
     </div>
 </div>
+
+<?php if (isset($alerta) && !empty($alerta)):?>
+    <div class="alert alert-warning background-warning">
+        <strong><?php echo $alerta;?></strong>
+    </div>
+<?php endif;?>
+                                                                
 <div class="card">
     <div class="card-header">
         <h4 >Criar Novo Usuário</h4>

@@ -28,7 +28,7 @@
     </div>
     <div class="card-block">
         <div class="table-responsive">
-            <table class="table table-striped table-bordered" id="example-2">
+            <table class="table table-striped table-bordered" id="tabelaDefault">
                 <thead>
                     <tr>
                         <th>ID</th>

@@ -19,6 +19,7 @@
         <link rel="stylesheet" type="text/css" href="<?php echo BASE_URL;?>\assets\icon\icofont\css\icofont.css">
         <link rel="stylesheet" type="text/css" href="<?php echo BASE_URL;?>\assets\bower_components\bootstrap-tagsinput\css\bootstrap-tagsinput.css">
         <link rel="stylesheet" type="text/css" href="<?php echo BASE_URL;?>\assets\bower_components\switchery\css\switchery.min.css">
+        <link href="//cdn.datatables.net/1.10.15/css/jquery.dataTables.min.css" rel="stylesheet">
     </head>
     <body>
         <div class="theme-loader">
@@ -146,7 +147,22 @@
         <script async="" src="https://www.googletagmanager.com/gtag/js?id=UA-23581568-13"></script>
         <script type="text/javascript" src="<?php echo BASE_URL;?>\assets\bower_components\bootstrap-multiselect\js\bootstrap-multiselect.js"></script>
         <script type="text/javascript" src="<?php echo BASE_URL;?>\assets\pages\advance-elements\select2-custom.js"></script>
-        <script type="text/javascript" src="<?php echo BASE_URL;?>\assets\pages\advance-elements\swithces.js"></script>
+        <script type="text/javascript" src="<?php echo BASE_URL;?>\assets\pages\advance-elements\swithces.js"></script>   
+        <script src="//cdn.datatables.net/1.13.4/js/jquery.dataTables.min.js"></script>
+        <script>
+        $(document).ready(function(){
+            $('#tabelaDefault').DataTable({
+                    "language": {
+                        "lengthMenu": "Mostrando _MENU_ registros por página",
+                        "zeroRecords": "Nada encontrado",
+                        "info": "Mostrando página _PAGE_ de _PAGES_",
+                        "infoEmpty": "Nenhum registro disponível",
+                        "infoFiltered": "(filtrado de _MAX_ registros no total)",
+                        "search": "Pesquisar",
+                    }
+                });
+        });
+        </script>
         <script>
             window.dataLayer = window.dataLayer || [];
             function gtag(){dataLayer.push(arguments);}

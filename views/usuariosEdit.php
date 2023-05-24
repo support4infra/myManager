@@ -41,7 +41,7 @@
             <div class="form-group row">
                 <label class="col-sm-1 col-form-label">Senha</label>
                 <div class="col-sm-5">
-                    <input type="password" name="senha" class="form-control" placeholder="********" value="<?php echo $getUsuario['password'] ;?>">
+                    <input type="password" name="senha" class="form-control" placeholder="********">
                 </div>
                 <label class="col-sm-1 col-form-label">Perfil</label>
                 <div class="col-sm-5">

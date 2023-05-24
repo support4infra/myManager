@@ -62,9 +62,6 @@
                         <td style="white-space: nowrap; width: 1%;">
                             <div class="tabledit-toolbar btn-toolbar" style="text-align: left;">
                                 <div class="btn-group btn-group-sm" style="float: none;">
-                                    <a href="<?php echo BASE_URL ;?>dominio/edit/<?php echo $dominio['id'];?>" class="tabledit-edit-button btn btn-primary waves-effect waves-light" style="float: none;margin: 5px;">                  
-                                        <span class="icofont icofont-ui-edit"></span>
-                                    </a>
                                     <a href="<?php echo BASE_URL ;?>dominio/delet/<?php echo $dominio['id'];?>" class="tabledit-delete-button btn btn-danger waves-effect waves-light" style="float: none;margin: 5px;">
                                         <span class="icofont icofont-ui-delete"></span>
                                     </a>

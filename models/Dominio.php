@@ -27,4 +27,22 @@ class Dominio extends model {
         $array = $sql->fetchAll();
         return $array;
     }
+
+    public function getQuantidade(){
+        $sql = "SELECT COUNT(*) as quantidadeDominios FROM cadastro_dominio";
+        $sql = $this->db->query($sql);
+
+        if ($sql->rowCount() > 0) {
+            $sql = $sql->fetch();
+            return $sql['quantidadeDominios'];
+        } else {
+            return 0;
+        }
+    }
+
+    public function deletDominio($id){
+        $sql = $this->db->prepare("DELETE FROM cadastro_dominio WHERE id = :id");
+        $sql->bindValue(":id", $id);
+        $sql->execute();
+    }
 }

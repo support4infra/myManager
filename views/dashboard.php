@@ -4,18 +4,18 @@
             <div class="card-block">
                 <div class="row align-items-center">
                     <div class="col-8">
-                        <h4 class="text-c-yellow f-w-600"><?php echo $quantidadeLicencas;?></h4>
-                        <h6 class="text-muted m-b-0">Licenças</h6>
+                        <h4 class="text-c-yellow f-w-600"><?php echo $quantidadeDominios;?></h4>
+                        <h6 class="text-muted m-b-0">Domínios Cadastrados</h6>
                     </div>
                     <div class="col-4 text-right">
-                        <i class="fa fa-barcode f-28"></i>
+                        <i class="fa fa-opera f-28"></i>
                     </div>
                 </div>
             </div>
             <div class="card-footer bg-c-yellow">
                 <div class="row align-items-center">
                     <div class="col-9">
-                        <p class="text-white m-b-0"><a href="<?php echo BASE_URL;?>licencas" class="text-white m-b-0"> Acessar </a></p>
+                        <p class="text-white m-b-0"><a href="<?php echo BASE_URL;?>dominio" class="text-white m-b-0"> Acessar </a></p>
                     </div>
                 </div>
             </div>

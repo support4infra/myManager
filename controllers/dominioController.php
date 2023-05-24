@@ -50,4 +50,18 @@ class dominioController extends controller{
             header("Location: ".BASE_URL);
         }
     }
+
+    public function delet($id){
+        $Usuarios = new Usuarios();
+        $Usuarios->setLoggedUsuario();
+        $Dominios = new Dominio();
+
+        if ($Usuarios->hasPermission('Comercial')) {
+                $Dominios->deletDominio($id);
+                header("Location: ".BASE_URL."dominio");
+            } 
+        else {
+            header("Location: ".BASE_URL."dominio");
+        }
+    }
 }

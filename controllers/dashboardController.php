@@ -11,11 +11,13 @@ class dashboardController extends controller{
     
     public function index(){
         $Usuarios = new Usuarios();
+        $Dominios = new Dominio();
         $Usuarios->setLoggedUsuario();
         $Entidades = new Entidades($Usuarios->getEntidade());
 
         $dados = array(
             'quantidadeUsuarios' => $Usuarios->getQuantidade(),
+            'quantidadeDominios' => $Dominios->getQuantidade(),
             'nomeEntidade' => $Entidades->getNome(),
         );
 

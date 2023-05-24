@@ -57,7 +57,7 @@ CREATE TABLE `cadastro_dominio` (
   `nomeDominio` varchar(50) COLLATE utf8_unicode_ci NOT NULL,
   `nomeCliente` varchar(50) COLLATE utf8_unicode_ci NOT NULL,
   PRIMARY KEY (`id`)
-) ENGINE=InnoDB AUTO_INCREMENT=10 DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
+) ENGINE=InnoDB AUTO_INCREMENT=12 DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -66,7 +66,7 @@ CREATE TABLE `cadastro_dominio` (
 
 LOCK TABLES `cadastro_dominio` WRITE;
 /*!40000 ALTER TABLE `cadastro_dominio` DISABLE KEYS */;
-INSERT INTO `cadastro_dominio` VALUES (1,1,'4infra.com.br','4INFRA'),(2,1,'quatroinfra.com.br','4INFRA'),(3,1,'aaadvogados.com.br','AA Advogados'),(8,1,'acser.ind.br','ACSER'),(9,1,'actadvogados.com.br','ACT ADVOGADOS');
+INSERT INTO `cadastro_dominio` VALUES (1,1,'4infra.com.br','4INFRA'),(2,1,'quatroinfra.com.br','4INFRA'),(3,1,'aaadvogados.com.br','AA Advogados'),(4,1,'acser.ind.br','ACSER'),(5,1,'actadvogados.com.br','ACT ADVOGADOS'),(6,1,'simakrent.com.br','SIMAK'),(7,1,'afpconstrucao.com.br','AFP'),(8,1,'primeresults.com.br','AGV'),(9,1,'altacademia.com.br','ALT ACADEMIA'),(10,1,'automaton.com.br','AUTOMATON'),(11,1,'asttter.org.br','ASTTTER');
 /*!40000 ALTER TABLE `cadastro_dominio` ENABLE KEYS */;
 UNLOCK TABLES;
 
@@ -260,4 +260,4 @@ UNLOCK TABLES;
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
 /*!40111 SET SQL_NOTES=@OLD_SQL_NOTES */;
 
--- Dump completed on 2023-05-24 14:36:59
+-- Dump completed on 2023-05-24 15:21:38

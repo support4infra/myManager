@@ -21,7 +21,7 @@ class Dominio extends model {
 
     public function getListDominio($id_entidade){
         $array = array();
-        $sql = $this->db->prepare("SELECT * FROM cadastro_dominio WHERE id_entidade = :id_entidade");
+        $sql = $this->db->prepare("SELECT * FROM cadastro_dominio WHERE id_entidade = :id_entidade order by nomeCliente");
         $sql->bindValue(':id_entidade', $id_entidade);
         $sql->execute();
         $array = $sql->fetchAll();

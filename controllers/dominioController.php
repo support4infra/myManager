@@ -19,7 +19,7 @@ class dominioController extends controller{
         if ($Usuarios->hasPermission('Comercial')) { 
             $dados= array(
                 'nomeEntidade' => $Entidades->getNome(),
-                'getListDominio' => $Dominio->getListDominio(),
+                'getListDominio' => $Dominio->getListDominio($Usuarios->getEntidade()),
             );       
             $this->loadTemplate('dominio', $dados);
         } else {
@@ -30,17 +30,21 @@ class dominioController extends controller{
     public function add(){
         $Usuarios = new Usuarios();
         $Usuarios->setLoggedUsuario();
-        $Entidades = new Entidades($Usuarios->getEntidade());
-
+        $Dominios = new Dominio();
+        $dados = array( );    
         if ($Usuarios->hasPermission('Comercial')) { 
-            if (isset($_POST['dominio']) && !empty($_POST['dominio'])) {
-                $nomeDominio = addslashes($_POST['dominio']);
-                $nomeCliente = addslashes($_POST['cliente']);
-                header("Location: ".BASE_URL."dominio");
+            if (isset($_POST['nomeDominio']) && !empty($_POST['nomeDominio'])) {
+                $nomeDominio = addslashes($_POST['nomeDominio']);
+                $nomeCliente = addslashes($_POST['nomeCliente']);
+                $retorno = $Dominios->addDominio($nomeDominio, $nomeCliente, $Usuarios->getEntidade());
+                if ($retorno == "1") {
+                    header("Location: ".BASE_URL."dominio");
+                }else {
+                    $dados['alerta'] = "Domínio já se encontra cadastrado!";
+                }
+                
             }
-            $dados= array(
-                'nomeEntidade' => $Entidades->getNome(),
-            );       
+   
             $this->loadTemplate('dominioAdd', $dados);
         } else {
             header("Location: ".BASE_URL);

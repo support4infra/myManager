@@ -32,10 +32,9 @@
                 <thead>
                     <tr>
                         <th>ID</th>
+                        <th>CLIENTE</th>
                         <th>DOMINIO</th>
-                        <th>HOST</th>
                         <th>MX</th>
-                        <th>PRIORIDADE</th>
                         <th>AÇÃO</th>
                     </tr>
                 </thead>
@@ -44,16 +43,21 @@
                     <tr>
                         <th scope="row"><?php echo $dominio['id'];?></th>                      
                         <td class="tabledit-view-mode">
-                            <span class="tabledit-span"><?php echo $dominio['dominio'];?></span>
+                            <span class="tabledit-span"><?php echo $dominio['nomeCliente'];?></span>
                         </td>
                         <td class="tabledit-view-mode">
-                            <span class="tabledit-span"><?php echo $dominio['host'];?></span>
+                            <span class="tabledit-span"><?php echo $dominio['nomeDominio'];?></span>
                         </td>
                         <td class="tabledit-view-mode">
-                            <span class="tabledit-span"><?php echo $dominio['target'];?></span>
-                        </td>
-                        <td class="tabledit-view-mode">
-                            <span class="tabledit-span"><?php echo $dominio['pri'];?></span>
+                            <span class="tabledit-span">
+                                <?php
+                                    if(getmxrr($dominio['nomeDominio'],$mx_details)){
+                                        foreach($mx_details as $mx){
+                                          echo "$mx <br>";
+                                        }
+                                      }
+                                ?>
+                            </span>
                         </td>
                         <td style="white-space: nowrap; width: 1%;">
                             <div class="tabledit-toolbar btn-toolbar" style="text-align: left;">
